@@ -57,20 +57,27 @@ p {
   height: 100dvh;
   width: 100%;
   background-color: #000;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #make-up .makeup-block {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   font-size: 2.75rem;
+  padding-block: 2.5rem;
 }
 #make-up .bi {
   color: #bd0000;
 }
 @media (max-width: 768px) {
+  #make-up .makeup-block {
+    padding-block: 0px;
+  }
   #make-up .makeup-block > div {
     border-bottom: 0.25rem solid #fff;
     font-size: clamp(2rem, 3vw, 4rem);
+    padding-block: 1.85rem;
   }
 }
 

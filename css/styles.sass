@@ -56,17 +56,22 @@ p
     height: 100dvh
     width: 100%
     background-color: $negro
+    object-fit: cover
     .makeup-block
         font-family: $main-text
         font-weight: 300
         text-transform: uppercase
         font-size: 2.75rem
+        padding-block: 2.5rem
     .bi
         color: $rojo
     @media (max-width: 768px) 
+        .makeup-block
+            padding-block: 0px 
         .makeup-block > div
             border-bottom: 0.25rem solid $blanco
             font-size: clamp(2rem, 3vw, 4rem)
+            padding-block: 1.85rem
 
 #agendar
     height: 100dvh
