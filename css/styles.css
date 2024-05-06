@@ -59,7 +59,6 @@ p {
   background-color: #000;
 }
 #make-up .makeup-block {
-  height: 150px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
@@ -71,7 +70,6 @@ p {
 @media (max-width: 768px) {
   #make-up .makeup-block > div {
     border-bottom: 0.25rem solid #fff;
-    padding: 2rem;
     font-size: clamp(2rem, 3vw, 4rem);
   }
 }
