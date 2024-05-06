@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap')
+$blanco: #fff
+$rojo: #bd0000
+$gris: #606060
+$font-size: 1.6rem
+$titulos: 5rem
+$main-text: "Lato", sans-serif
+$negro: #000
+
+*
+    box-sizing: border-box
+    position: relative
+    min-width: 0
+
+html
+    font-size: 62.5% //*/ 10px */
+    
+
+body
+    min-height: 100dvh
+    font-size: $font-size
+    font-family: $main-text
+    color: $blanco
+
+h1, h2, h3, h4 
+    text-wrap: balance
+
+p
+    text-wrap: pretty
+
+#home
+    background-image: url(../img/bg_principal_1.png)
+    background-size: cover
+    width: 100%
+    height: 100dvh
+    .main-hero
+        height: 85dvh
+    img
+        height: 560px
+    .main-text
+        text-transform: uppercase
+        height: 15vh
+        width: 100%
+        border-block: 0.25rem solid $blanco
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: rgba(0,0,0,0.5 )
+        text-align: center
+        h2
+            font-size: clamp(2rem, 3vw, 4rem)
+            font-family: $main-text
+            font-weight: 300
+        
+#make-up
+    height: 100dvh
+    width: 100%
+    background-color: $negro
+    .makeup-block
+        height: 150px
+        font-family: $main-text
+        font-weight: 300
+        text-transform: uppercase
+        font-size: 2.75rem
+    .bi
+        color: $rojo
+    @media (max-width: 768px) 
+        .makeup-block > div
+            border-bottom: 0.25rem solid $blanco
+            padding: 2rem
+            font-size: clamp(2rem, 3vw, 4rem)
+
+#agendar
+    height: 100dvh
+    width: 100%
+    background-image: url(../img/bg_3_luciana_cita.png)
+    background-size: cover
+    background-position: center
+    .citas
+        height: 100dvh
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        align-content: flex-start
+        text-align: left
+        h1
+            font-size: clamp(5rem, 7vw, 10rem)
+            font-family: $main-text
+            font-weight: 100
+            text-transform: uppercase
+        .bi-plus-lg
+            font-size: clamp(8rem, 10vw, 10rem)
+            color: $rojo
+            text-align: left
+        @media (max-width: 991px)
+            padding-left: 3rem
+            h1
+                font-weight: 400
+    
+    .agenda
+        width: 300px
+        text-transform: uppercase
+        font-size: clamp(3rem, 5vw, 6rem)
+        font-family: $main-text
+        font-weight: 300
+        text-justify: justify
+        @media (max-width: 991px) 
+            width: 50%
+            font-weight: 400
+            font-kerning: 2rem
+
+#testimonio
+    background-color: $negro
+    padding-block: 10rem
+    .texto-testimonio
+        font-family: $main-text
+        font-size: clamp(2rem, 2vw, 2.5rem)
+        font-weight: 300
