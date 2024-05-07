@@ -313,7 +313,7 @@ footer .input-group {
     width: 100%;
   }
 }
-footer .input-group input[type=text] {
+footer .input-group input[type=email] {
   font-size: 1.75rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
