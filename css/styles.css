@@ -266,6 +266,25 @@ footer {
   padding-block: 5rem;
   background: #fff;
 }
+footer .iconos-rrss {
+  color: #606060;
+  font-size: 2rem;
+}
+footer .iconos-rrss ul {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+footer .iconos-rrss ul li {
+  padding: 2rem;
+  text-decoration: underline;
+  font-size: clamp(1.85rem, 2.2vw, 2.75rem);
+  font-weight: 300;
+  color: #606060;
+}
 footer .input-group {
   height: 50px;
   width: 25%;
