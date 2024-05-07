@@ -134,11 +134,36 @@ p {
 }
 
 #testimonio {
-  background-color: #000;
   padding-block: 10rem;
+  background-image: url(../img/maquillaje.mp4);
+  width: 100%;
+  background-position: center;
 }
 #testimonio .texto-testimonio {
   font-family: "Lato", sans-serif;
   font-size: clamp(2rem, 2vw, 2.5rem);
   font-weight: 300;
+}
+#testimonio .menu_links {
+  margin-block: 5rem;
+}
+#testimonio .menu_links ul {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+#testimonio .menu_links ul li {
+  padding-block: 2rem;
+  text-decoration: underline;
+  font-size: 3.3rem;
+  font-weight: 300;
+  color: #fff;
+}
+#testimonio .menu_links ul li span {
+  color: #bd0000;
+  text-decoration: underline;
+  font-size: 3.3rem;
+  font-weight: 400;
 }/*# sourceMappingURL=styles.css.map */
