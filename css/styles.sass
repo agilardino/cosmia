@@ -50,10 +50,15 @@ video
     background-position: center center
     width: 100%
     height: 100dvh
+    @media (max-width: 768px) 
+        background-image: url(../img/bg-principal-mvl.png)
+        background-position: center center
     .main-hero
         height: 85dvh
     img
         height: 560px
+        @media (max-width: 768px) 
+            height: 320px
     .main-text
         text-transform: uppercase
         height: 15vh
@@ -73,7 +78,6 @@ video
     height: 100dvh
     width: 100%
     background-color: $negro
-    object-fit: cover
     .makeup-block
         font-family: $main-text
         font-weight: 300
@@ -89,6 +93,9 @@ video
             border-bottom: 0.25rem solid $blanco
             font-size: clamp(2rem, 3vw, 4rem)
             padding-block: 1.85rem
+        img
+            width: 100%
+            object-fit: fill
 
 #agendar
     height: 100dvh
@@ -131,13 +138,13 @@ video
             font-kerning: 2rem
 
 #testimonio
-    padding-block: 10rem
+    padding-block: 8rem
     width: 100%
     height: 100dvh
     background-color: rgba(0, 0, 0, .75)
     @media (max-width: 768px)
         height: 100dvh
-        padding-block: 2rem
+        padding-block: 1.5rem
     .texto-testimonio
         font-family: $main-text
         font-size: clamp(2rem, 2vw, 2.5rem)
@@ -149,7 +156,7 @@ video
     .menu_links
         margin-block: 5rem
         @media  ( max-width: 768px )
-           margin-block: 2.5rem
+           margin-block: 2rem
         ul
             font-family: $main-text
             text-transform: uppercase
@@ -176,7 +183,7 @@ video
     .redes-sociales
         margin-block: 5rem
         @media  ( max-width: 768px )
-           margin-block: 2.5rem
+           margin-block: 2rem
         ul
             font-family: $main-text
             text-transform: uppercase
@@ -207,6 +214,9 @@ video
     display: none
     @media (max-width: 768px) 
         display: flex
+        img
+            width: 100%
+            object-fit: cover
     
 footer
     width: 100%
