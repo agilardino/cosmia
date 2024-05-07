@@ -14,6 +14,7 @@ body {
   font-size: 1.6rem;
   font-family: "Lato", sans-serif;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4 {
@@ -26,7 +27,7 @@ p {
 
 video {
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
@@ -160,7 +161,8 @@ video {
 }
 @media (max-width: 768px) {
   #testimonio {
-    height: auto;
+    height: 100dvh;
+    padding-block: 2rem;
   }
 }
 #testimonio .texto-testimonio {
@@ -168,8 +170,18 @@ video {
   font-size: clamp(2rem, 2vw, 2.5rem);
   font-weight: 100;
 }
+@media (max-width: 768px) {
+  #testimonio .texto-testimonio span {
+    display: none;
+  }
+}
 #testimonio .menu_links {
   margin-block: 5rem;
+}
+@media (max-width: 768px) {
+  #testimonio .menu_links {
+    margin-block: 2.5rem;
+  }
 }
 #testimonio .menu_links ul {
   font-family: "Lato", sans-serif;
@@ -181,14 +193,14 @@ video {
 #testimonio .menu_links ul li {
   padding-block: 2rem;
   text-decoration: underline;
-  font-size: clamp(3.3rem, 4.5vw, 5rem);
+  font-size: clamp(3rem, 4vw, 4.5rem);
   font-weight: 300;
   color: #fff;
 }
 #testimonio .menu_links ul li span {
   color: #bd0000;
   text-decoration: underline;
-  font-size: clamp(3.3rem, 4.5vw, 5rem);
+  font-size: clamp(3rem, 4vw, 4.5rem);
   font-weight: 400;
 }
 @media (max-width: 768px) {
@@ -196,9 +208,17 @@ video {
     flex-direction: column;
     align-items: center;
   }
+  #testimonio .menu_links ul li {
+    padding-block: 0.75rem;
+  }
 }
 #testimonio .redes-sociales {
   margin-block: 5rem;
+}
+@media (max-width: 768px) {
+  #testimonio .redes-sociales {
+    margin-block: 2.5rem;
+  }
 }
 #testimonio .redes-sociales ul {
   font-family: "Lato", sans-serif;
@@ -211,7 +231,7 @@ video {
 #testimonio .redes-sociales ul li {
   padding: 2rem;
   text-decoration: underline;
-  font-size: 2.75rem;
+  font-size: clamp(1.85rem, 2.2vw, 2.75rem);
   font-weight: 300;
   color: #fff;
 }
@@ -220,17 +240,29 @@ video {
     flex-direction: column;
     align-items: center;
   }
+  #testimonio .redes-sociales ul li {
+    padding-block: 0.75rem;
+  }
 }
 #testimonio .info-contacto p {
   font-family: "Lato", sans-serif;
-  font-size: clamp(1.5rem, 2.2vw, 2.3rem);
+  font-size: clamp(1.75rem, 2.5vw, 3rem);
   line-height: 1.2;
   text-transform: uppercase;
   font-weight: 100;
 }
 
+.face-off {
+  display: none;
+}
+@media (max-width: 768px) {
+  .face-off {
+    display: flex;
+  }
+}
+
 footer {
-  width: 100vw;
+  width: 100%;
   padding-block: 5rem;
-  background: footer #fff;
+  background: #fff;
 }/*# sourceMappingURL=styles.css.map */
