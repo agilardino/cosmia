@@ -37,6 +37,11 @@ video {
   z-index: -1;
   filter: opacity(0.75);
 }
+@media (max-width: 768px) {
+  video {
+    height: 100dvh;
+  }
+}
 
 #home {
   background-image: url(../img/bg_principal_1.png);
@@ -153,6 +158,11 @@ video {
   height: 100dvh;
   background-color: rgba(0, 0, 0, 0.75);
 }
+@media (max-width: 768px) {
+  #testimonio {
+    height: auto;
+  }
+}
 #testimonio .texto-testimonio {
   font-family: "Lato", sans-serif;
   font-size: clamp(2rem, 2vw, 2.5rem);
@@ -181,6 +191,12 @@ video {
   font-size: clamp(3.3rem, 4.5vw, 5rem);
   font-weight: 400;
 }
+@media (max-width: 768px) {
+  #testimonio .menu_links ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #testimonio .redes-sociales {
   margin-block: 5rem;
 }
@@ -199,11 +215,11 @@ video {
   font-weight: 300;
   color: #fff;
 }
-#testimonio .redes-sociales ul li span {
-  color: #bd0000;
-  text-decoration: underline;
-  font-size: 3.3rem;
-  font-weight: 400;
+@media (max-width: 768px) {
+  #testimonio .redes-sociales ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #testimonio .info-contacto p {
   font-family: "Lato", sans-serif;
@@ -211,4 +227,10 @@ video {
   line-height: 1.2;
   text-transform: uppercase;
   font-weight: 100;
+}
+
+footer {
+  width: 100vw;
+  padding-block: 5rem;
+  background: footer #fff;
 }/*# sourceMappingURL=styles.css.map */
