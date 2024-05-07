@@ -28,6 +28,17 @@ h1, h2, h3, h4
 p
     text-wrap: pretty
 
+video
+        width: 100vw
+        height: 100vh
+        object-fit: cover
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        z-index: -1
+        filter: opacity(0.75) 
 #home
     background-image: url(../img/bg_principal_1.png)
     background-size: cover
@@ -116,13 +127,13 @@ p
 
 #testimonio
     padding-block: 10rem
-    background-image: url(../img/maquillaje.mp4)
     width: 100%
-    background-position: center
+    height: 100dvh
+    background-color: rgba(0, 0, 0, .75)
     .texto-testimonio
         font-family: $main-text
         font-size: clamp(2rem, 2vw, 2.5rem)
-        font-weight: 300
+        font-weight: 100
     .menu_links
         margin-block: 5rem
         ul
@@ -134,7 +145,27 @@ p
             li
                 padding-block: 2rem
                 text-decoration: underline
-                font-size: 3.3rem
+                font-size: clamp(3.3rem, 4.5vw, 5rem)
+                font-weight: 300
+                color: $blanco
+                span
+                    color: $rojo
+                    text-decoration: underline
+                    font-size: clamp(3.3rem, 4.5vw, 5rem)
+                    font-weight: 400
+    .redes-sociales
+        margin-block: 5rem
+        ul
+            font-family: $main-text
+            text-transform: uppercase
+            list-style: none
+            display: flex
+            justify-content: center
+            gap: 2rem
+            li
+                padding: 2rem
+                text-decoration: underline
+                font-size: 2.75rem
                 font-weight: 300
                 color: $blanco
                 span
@@ -142,4 +173,10 @@ p
                     text-decoration: underline
                     font-size: 3.3rem
                     font-weight: 400
-
+    .info-contacto
+        p
+            font-family: $main-text
+            font-size: clamp(1.5rem, 2.2vw, 2.3rem)
+            line-height: 1.2
+            text-transform: uppercase
+            font-weight: 100
