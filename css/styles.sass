@@ -6,6 +6,8 @@ $font-size: 1.6rem
 $titulos: 5rem
 $main-text: "Lato", sans-serif
 $negro: #000
+$input-color: $negro
+$input-group-addon-color: $input-color
 
 *
     box-sizing: border-box
@@ -210,3 +212,19 @@ footer
     width: 100%
     padding-block: 5rem
     background: $blanco
+    .input-group
+        height: 50px
+        width: 25%
+        input[type="text"]
+            font-size: 1.75rem
+            font-family: $main-text
+            font-weight: 400
+            background-color: $negro
+            color: $blanco
+            border: none
+            padding: 1rem
+        button
+            width: 45px
+            border: none
+            .bi-send-check
+                font-size: 2rem

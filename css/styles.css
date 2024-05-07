@@ -265,4 +265,24 @@ footer {
   width: 100%;
   padding-block: 5rem;
   background: #fff;
+}
+footer .input-group {
+  height: 50px;
+  width: 25%;
+}
+footer .input-group input[type=text] {
+  font-size: 1.75rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+}
+footer .input-group button {
+  width: 45px;
+  border: none;
+}
+footer .input-group button .bi-send-check {
+  font-size: 2rem;
 }/*# sourceMappingURL=styles.css.map */
