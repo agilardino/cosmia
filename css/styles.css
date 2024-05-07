@@ -14,6 +14,7 @@ body {
   font-size: 1.6rem;
   font-family: "Lato", sans-serif;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4 {
@@ -24,9 +25,29 @@ p {
   text-wrap: pretty;
 }
 
+video {
+  width: 100vw;
+  height: 100dvh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: opacity(0.75);
+}
+@media (max-width: 768px) {
+  video {
+    height: 100dvh;
+  }
+}
+
 #home {
   background-image: url(../img/bg_principal_1.png);
   background-size: cover;
+  background-position: center center;
   width: 100%;
   height: 100dvh;
 }
@@ -148,26 +169,19 @@ p {
 }
 
 #testimonio {
-  background-color: #000;
   padding-block: 10rem;
+  width: 100%;
+  height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+@media (max-width: 768px) {
+  #testimonio {
+    height: 100dvh;
+    padding-block: 2rem;
+  }
 }
 #testimonio .texto-testimonio {
   font-family: "Lato", sans-serif;
   font-size: clamp(2rem, 2vw, 2.5rem);
   font-weight: 300;
-}
-#testimonio .menu_links {
-  margin-block: 2.5rem;
-  font-family: "Lato", sans-serif;
-}
-#testimonio .menu_links ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-}
-#testimonio .menu_links ul li {
-  list-style: none;
-  font-size: 2.5rem;
-  text-transform: uppercase;
 }/*# sourceMappingURL=styles.css.map */
