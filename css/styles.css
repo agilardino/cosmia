@@ -90,6 +90,11 @@ video {
   width: 100%;
   background-color: #000;
 }
+@media (max-width: 991px) {
+  #make-up {
+    height: auto;
+  }
+}
 #make-up .makeup-block {
   font-family: "Lato", sans-serif;
   font-weight: 300;
