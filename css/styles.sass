@@ -32,7 +32,7 @@ p
     text-wrap: pretty
 
 video
-        width: 100dvw
+        width: 100%
         height: 100dvh
         object-fit: cover
         position: absolute
@@ -118,6 +118,7 @@ video
             font-family: $main-text
             font-weight: 100
             text-transform: uppercase
+            padding-left: 1rem
         .bi-plus-lg
             font-size: clamp(8rem, 10vw, 10rem)
             color: $rojo
@@ -126,6 +127,7 @@ video
             padding-left: 3rem
             h1
                 font-weight: 400
+                padding-left: 1rem
     
     .agenda
         width: 300px
@@ -140,10 +142,12 @@ video
             font-kerning: 2rem
 
 #testimonio
-    padding-block: 8rem
+    padding-block: 5rem
     width: 100%
     height: 100dvh
     background-color: rgba(0, 0, 0, .5)
+    display: flex
+    justify-content: space-between
     @media (max-width: 768px)
         height: 100dvh
         padding-block: 1.5rem
@@ -185,7 +189,7 @@ video
     .redes-sociales
         margin-block: 5rem
         @media  ( max-width: 768px )
-           margin-block: 2rem
+           margin-block: 1.5rem
         ul
             font-family: $main-text
             text-transform: uppercase
@@ -208,7 +212,7 @@ video
     .info-contacto
         p
             font-family: $main-text
-            font-size: clamp(1.75rem, 2.5vw, 3rem)
+            font-size: clamp(1.75rem, 2.5vw, 2.5rem)
             line-height: 1.2
             color: $blanco
             text-transform: uppercase
