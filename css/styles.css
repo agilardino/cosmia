@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   box-sizing: border-box;
   position: relative;
@@ -12,7 +12,7 @@ html {
 body {
   min-height: 100dvh;
   font-size: 1.6rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", sans-serif;
   color: #fff;
   scroll-behavior: smooth;
 }
@@ -54,11 +54,11 @@ video {
 @media (max-width: 768px) {
   #home {
     background-image: url(../img/bg-principal-mvl.png);
-    background-position: center center;
+    background-position: top top;
   }
 }
 #home .main-hero {
-  height: 85dvh;
+  height: 75dvh;
 }
 #home img {
   height: 560px;
@@ -81,15 +81,17 @@ video {
 }
 #home .main-text h2 {
   font-size: clamp(2rem, 3vw, 4rem);
-  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 300;
 }
 #home .makeup-block {
-  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   font-size: 2.75rem;
+  background-color: rgb(0, 0, 0);
   padding-block: 2.5rem;
+  height: 10vh;
 }
 #home .bi {
   color: #bd0000;
@@ -139,7 +141,7 @@ video {
 }
 #agendar .citas h1 {
   font-size: clamp(5rem, 7vw, 10rem);
-  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 100;
   text-transform: uppercase;
   padding-left: 1rem;
@@ -162,7 +164,7 @@ video {
   width: 300px;
   text-transform: uppercase;
   font-size: clamp(3rem, 5vw, 6rem);
-  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 300;
   text-justify: justify;
 }
@@ -189,7 +191,7 @@ video {
   }
 }
 #testimonio .texto-testimonio {
-  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: clamp(2rem, 2vw, 2.5rem);
   font-weight: 100;
 }
@@ -207,7 +209,7 @@ video {
   }
 }
 #testimonio .menu_links ul {
-  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
   list-style: none;
   display: flex;
@@ -244,7 +246,7 @@ video {
   }
 }
 #testimonio .redes-sociales ul {
-  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
   list-style: none;
   display: flex;
@@ -268,7 +270,7 @@ video {
   }
 }
 #testimonio .info-contacto p {
-  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: clamp(1.75rem, 2.5vw, 2.5rem);
   line-height: 1.2;
   color: #fff;
@@ -303,7 +305,7 @@ footer .iconos-rrss {
   font-size: 2rem;
 }
 footer .iconos-rrss ul {
-  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
   list-style: none;
   display: flex;
@@ -328,7 +330,7 @@ footer .input-group {
 }
 footer .input-group input[type=email] {
   font-size: 1.75rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 400;
   background-color: #000;
   color: #fff;
