@@ -66,9 +66,9 @@ video {
 #home img {
   height: 560px;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (max-width: 320px) {
   #home img {
-    height: 320px;
+    height: 120px;
   }
 }
 #home .main-text {
