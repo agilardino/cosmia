@@ -42,7 +42,6 @@ video
         top: 0
         bottom: 0
         z-index: -1
-        filter: opacity(1) 
         @media (max-width: 768px) 
             height: 100dvh
 
@@ -283,3 +282,45 @@ footer
             border: none
             .bi-send-check
                 font-size: 2rem
+
+// ESTILOS DE LAS PAGINAS INTERNAS
+
+#acerca
+    width: 100%
+    //background-color: $negro
+    height: calc( 800px - 10vh )
+    text-transform: uppercase
+    display: flex
+    @media ( max-width: 991 )
+        height: 100dvh
+        
+    video
+        filter: grayscale(95%)
+        object-fit: cover
+    .__acerca-contenido
+        display: flex
+        flex-direction: column
+        justify-content: center
+    .sub-heading
+        h2
+            font-size: clamp(3rem, calc(4vw + 2rem), 5rem)
+            font-family: $main-text
+            font-weight: 200
+            margin: 0 auto
+            padding: 0 0
+    .main-heading
+        h1
+            padding: 0
+            margin: 0
+            font-size: clamp(7rem, calc(8vw + 1rem), 10rem)
+            line-height: 0.85
+
+#trabajos
+    width: 100%
+    background-color: $negro
+    color: $blanco
+    .descripcion
+        font-family: $main-text
+        font-size: 2rem
+        line-height: 1.5
+        font-weight: 300

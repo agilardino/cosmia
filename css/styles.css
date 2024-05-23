@@ -37,7 +37,6 @@ video {
   top: 0;
   bottom: 0;
   z-index: -1;
-  filter: opacity(1);
 }
 @media (max-width: 768px) {
   video {
@@ -442,4 +441,51 @@ footer .input-group button {
 }
 footer .input-group button .bi-send-check {
   font-size: 2rem;
+}
+
+#acerca {
+  width: 100%;
+  height: calc(800px - 10vh);
+  text-transform: uppercase;
+  display: flex;
+}
+@media (max-width: 991) {
+  #acerca {
+    height: 100dvh;
+  }
+}
+#acerca video {
+  filter: grayscale(95%);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#acerca .__acerca-contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#acerca .sub-heading h2 {
+  font-size: clamp(3rem, 4vw + 2rem, 5rem);
+  font-family: "Work Sans", sans-serif;
+  font-weight: 200;
+  margin: 0 auto;
+  padding: 0 0;
+}
+#acerca .main-heading h1 {
+  padding: 0;
+  margin: 0;
+  font-size: clamp(7rem, 8vw + 1rem, 10rem);
+  line-height: 0.85;
+}
+
+#trabajos {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+#trabajos .descripcion {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 300;
 }/*# sourceMappingURL=styles.css.map */
