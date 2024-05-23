@@ -26,6 +26,14 @@ p {
   text-wrap: pretty;
 }
 
+.owl-carousel img {
+  aspect-ratio: 3/4;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 video {
   width: 100%;
   height: 100dvh;
@@ -476,6 +484,7 @@ footer .input-group button .bi-send-check {
   margin: 0;
   font-size: clamp(7rem, 8vw + 1rem, 10rem);
   line-height: 0.85;
+  font-weight: 400;
 }
 
 #trabajos {
