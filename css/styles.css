@@ -16,7 +16,6 @@ body {
   color: #fff;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background: #000;
 }
 
 h1, h2, h3, h4 {
@@ -53,6 +52,9 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+  max-width: 1320px;
+  background-color: #fff;
+  margin: 0 auto;
 }
 
 .logo {
@@ -64,24 +66,21 @@ header {
   list-style-type: none;
   display: flex;
   gap: 2rem;
-  font-size: 1.35rem;
+  font-size: 2.35rem;
 }
 .nav-list li a {
   text-decoration: none;
   color: #1c1c1c;
 }
-
-.abrir-menu,
-.cerrar-menu {
+.abrir-menu, .cerrar-menu {
   display: none;
 }
 
 @media (min-width: 300px) {
-  .abrir-menu,
-  .cerrar-menu {
+  .abrir-menu, .cerrar-menu {
     display: block;
     border: 0;
-    font-size: 1.25rem;
+    font-size: 1.25em;
     background-color: transparent;
     cursor: pointer;
   }
@@ -90,15 +89,15 @@ header {
   }
   .abrir-menu i {
     color: #a01c1c;
-    font-size: 2.5rem;
-    padding: 1.5rem;
+    font-size: 2.5em;
+    padding: 1.5em;
   }
   .cerrar-menu {
     color: #ececec;
   }
   .cerrar-menu i {
-    font-size: 2.5rem;
-    padding: 1.5rem;
+    font-size: 2.5em;
+    padding: 1.5em;
   }
   .nav {
     opacity: 0;
@@ -111,12 +110,12 @@ header {
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: #a01c1c;
-    filter: opacity(1);
-    padding: 2rem;
-    box-shadow: 0 0 0 100vmax rgba(214, 63, 63, 0.5);
-    width: 50%;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 2.5em;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.75);
+    width: 100%;
     transition: ease 0.5s;
+    height: 100dvh;
   }
   .nav.visible {
     opacity: 1;
@@ -127,7 +126,7 @@ header {
     align-items: flex-end;
   }
   .nav-list li a {
-    color: #a01c1c;
+    color: #fff;
   }
 }
 #home {
