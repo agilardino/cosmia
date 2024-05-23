@@ -68,7 +68,9 @@ video {
 }
 @media (max-width: 768px) {
   #home img {
-    height: 320px;
+    height: 100px;
+    width: auto;
+    filter: invert(1);
   }
 }
 #home .main-text {
@@ -97,8 +99,8 @@ video {
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 2.1rem;
   background-color: rgb(0, 0, 0);
+  font-size: clamp(2.1rem, 2.5vw, 2.8rem);
   padding-block: 2.5rem;
   height: 10vh;
 }
@@ -114,7 +116,7 @@ video {
   }
   #home .makeup-block > div {
     border-bottom: 0.25rem solid #fff;
-    font-size: clamp(1.75rem, 2.75vw, 3rem);
+    font-size: clamp(2.1rem, 2.75vw, 3rem);
     padding-block: 1.85rem;
   }
   #home img {
