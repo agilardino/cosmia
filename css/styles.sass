@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap')
+
 $blanco: #fff
 $rojo: #bd0000
 $gris: #606060
@@ -16,12 +17,15 @@ $input-group-addon-color: $input-color
 
 html
     font-size: 62.5% //*/ 10px */
+
 body
     min-height: 100dvh
     font-size: $font-size
     font-family: $main-text
     color: $blanco
     scroll-behavior: smooth
+    overflow-x: hidden
+    background: $negro
 h1, h2, h3, h4 
     text-wrap: balance
 p
@@ -39,6 +43,9 @@ video
         filter: opacity(1) 
         @media (max-width: 768px) 
             height: 100dvh
+
+@import _navegacion.sass
+
 #home
     background-image: url(../img/bg_principal_1.png)
     background-size: cover

@@ -15,6 +15,8 @@ body {
   font-family: "Work Sans", sans-serif;
   color: #fff;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  background: #000;
 }
 
 h1, h2, h3, h4 {
@@ -44,6 +46,90 @@ video {
   }
 }
 
+header {
+  height: 120px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.logo {
+  max-width: 200px;
+  padding: 1rem 1rem;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.35rem;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+@media (min-width: 300px) {
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .abrir-menu {
+    color: #fff;
+  }
+  .abrir-menu i {
+    color: #a01c1c;
+    font-size: 2.5rem;
+    padding: 1.5rem;
+  }
+  .cerrar-menu {
+    color: #ececec;
+  }
+  .cerrar-menu i {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+  }
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #a01c1c;
+    filter: opacity(1);
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(214, 63, 63, 0.5);
+    width: 50%;
+    transition: ease 0.5s;
+  }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .nav-list li a {
+    color: #a01c1c;
+  }
+}
 #home {
   background-image: url(../img/bg_principal_1.png);
   background-size: cover;
