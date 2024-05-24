@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap')
+
 $blanco: #fff
 $rojo: #bd0000
 $gris: #606060
@@ -16,16 +17,26 @@ $input-group-addon-color: $input-color
 
 html
     font-size: 62.5% //*/ 10px */
+
 body
     min-height: 100dvh
     font-size: $font-size
     font-family: $main-text
     color: $blanco
     scroll-behavior: smooth
+    overflow-x: hidden
+
 h1, h2, h3, h4 
     text-wrap: balance
+
 p
     text-wrap: pretty
+
+.owl-carousel
+    img
+        aspect-ratio: 3 / 4
+        object-position: center
+        object-fit: cover
 video
         width: 100%
         height: 100dvh
@@ -36,9 +47,11 @@ video
         top: 0
         bottom: 0
         z-index: -1
-        filter: opacity(1) 
         @media (max-width: 768px) 
             height: 100dvh
+
+@import _navegacion.sass
+
 #home
     background-image: url(../img/bg_principal_1.png)
     background-size: cover
@@ -274,3 +287,46 @@ footer
             border: none
             .bi-send-check
                 font-size: 2rem
+
+// ESTILOS DE LAS PAGINAS INTERNAS
+
+#acerca
+    width: 100%
+    //background-color: $negro
+    height: calc( 800px - 10vh )
+    text-transform: uppercase
+    display: flex
+    @media ( max-width: 991 )
+        height: 100dvh
+        
+    video
+        filter: grayscale(95%)
+        object-fit: cover
+    .__acerca-contenido
+        display: flex
+        flex-direction: column
+        justify-content: center
+    .sub-heading
+        h2
+            font-size: clamp(3rem, calc(4vw + 2rem), 5rem)
+            font-family: $main-text
+            font-weight: 200
+            margin: 0 auto
+            padding: 0 0
+    .main-heading
+        h1
+            padding: 0
+            margin: 0
+            font-size: clamp(7rem, calc(8vw + 1rem), 10rem)
+            line-height: 0.85
+            font-weight: 400
+
+#trabajos
+    width: 100%
+    background-color: $negro
+    color: $blanco
+    .descripcion
+        font-family: $main-text
+        font-size: 2rem
+        line-height: 1.5
+        font-weight: 300

@@ -1,0 +1,73 @@
+header
+    height: 120px
+    width: 100vw
+    display: flex
+    justify-content: space-between
+    align-items: center
+    z-index: 1
+    max-width: 1320px
+    background-color: #fff
+    margin: 0 auto
+.logo
+    max-width: 200px
+    padding: 1rem 1rem
+
+.nav-list
+    list-style-type: none
+    display: flex
+    gap: 2rem
+    font-size: 2.35rem
+    li
+        a
+            text-decoration: none
+            color: #1c1c1c
+            &:hover
+                
+
+.abrir-menu, .cerrar-menu
+    display: none
+
+@media ( min-width: 300px)
+    .abrir-menu,.cerrar-menu
+        display: block
+        border: 0
+        font-size: 1.25em
+        background-color: transparent
+        cursor: pointer
+    .abrir-menu
+        color: #fff
+        i
+            color: #a01c1c
+            font-size: 2.5em
+            padding: 1.5em
+    .cerrar-menu
+        color: #ececec
+        i
+            font-size: 2.5em
+            padding: 1.5em
+    .nav
+        opacity: 0
+        visibility: hidden
+        display: flex
+        flex-direction: column
+        align-items: end
+        gap: 1rem
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        background-color: rgba(0, 0, 0, 0.75)
+        padding: 2.5em
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.75)
+        width: 100%
+        transition: ease .5s
+        height: 100dvh
+    .nav.visible
+            opacity: 1
+            visibility: visible
+    .nav-list
+        flex-direction: column
+        align-items: flex-end
+        li
+            a
+                color: #fff 
