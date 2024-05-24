@@ -545,4 +545,10 @@ footer .input-group button .bi-send-check {
   font-size: 2rem;
   color: #fff;
   padding-left: 2rem;
+}
+
+.gallery img {
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=styles.css.map */
