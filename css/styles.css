@@ -489,12 +489,13 @@ footer .input-group button .bi-send-check {
 
 #trabajos {
   width: 100%;
+  padding-block: 3rem;
   background-color: #000;
   color: #fff;
 }
 #trabajos .descripcion {
   font-family: "Work Sans", sans-serif;
   font-size: 2rem;
-  line-height: 1.5;
+  line-height: 2;
   font-weight: 300;
 }/*# sourceMappingURL=styles.css.map */
