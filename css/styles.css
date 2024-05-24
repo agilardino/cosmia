@@ -498,4 +498,17 @@ footer .input-group button .bi-send-check {
   font-size: 2rem;
   line-height: 2;
   font-weight: 300;
+}
+
+#__contenido-secundario {
+  padding-block: 5rem;
+}
+#__contenido-secundario .agendador h2 {
+  color: #606060;
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+#__contenido-secundario .cambio-rojo {
+  height: 120px;
+  filter: invert(14%) sepia(51%) saturate(7428%) hue-rotate(358deg) brightness(82%) contrast(118%);
 }/*# sourceMappingURL=styles.css.map */
