@@ -503,6 +503,11 @@ footer .input-group button .bi-send-check {
 #__contenido-secundario {
   padding-block: 5rem;
 }
+#__contenido-secundario p {
+  color: #606060;
+  padding-block: 3rem;
+  line-height: 2;
+}
 #__contenido-secundario .agendador h2 {
   color: #606060;
   text-transform: uppercase;
@@ -511,4 +516,21 @@ footer .input-group button .bi-send-check {
 #__contenido-secundario .cambio-rojo {
   height: 120px;
   filter: invert(14%) sepia(51%) saturate(7428%) hue-rotate(358deg) brightness(82%) contrast(118%);
+}
+#__contenido-secundario .bloquote {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: 20px;
+  background-color: #bd0000;
+}
+#__contenido-secundario .bloquote p {
+  font-size: 2rem;
+  color: #fff;
+  padding: 5rem;
+}
+#__contenido-secundario .blockquote-footer {
+  font-size: 2rem;
+  color: #fff;
+  padding-left: 2rem;
 }/*# sourceMappingURL=styles.css.map */
