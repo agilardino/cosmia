@@ -179,7 +179,8 @@ header {
   background-size: cover;
   background-position: top center;
   width: 100%;
-  height: 100dvh;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: rgba(0, 0, 0, 0.65);
 }
 @media (max-width: 991px) {
