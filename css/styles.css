@@ -61,7 +61,8 @@ video {
   animation-delay: 0.1s;
   animation-fill-mode: forwards;
   opacity: 0;
-  max-width: 650px;
+  max-width: 400px;
+  rotate: -90deg;
 }
 @media (max-width: 520px) {
   .logo_principal {
@@ -71,7 +72,7 @@ video {
 }
 
 header {
-  height: 120px;
+  height: 90px;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -194,19 +195,18 @@ header {
   background-size: cover;
   background-position: top center;
   width: 100%;
-  height: calc(85vh - 10rem);
+  height: calc(60dvh - 2rem);
   background-color: rgba(0, 0, 0, 0.65);
 }
 @media (max-width: 991px) {
   #home {
-    background-position: top center;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
   }
 }
 #home .main-hero {
-  height: 82dvh;
+  height: 100dvh;
 }
 #home img {
   height: 560px;
