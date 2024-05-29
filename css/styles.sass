@@ -71,82 +71,78 @@ video
 @import _animacion
 
 #home
-    //background-image: url(../img/bg_principal_1.png)
-    background-size: cover
-    background-position: top center
     width: 100%
-    height: calc( 60dvh - 2rem )
+    height: 80dvh
     background-color: rgba(0 0 0 / 0.65)
     @media (max-width: 991px) 
         display: flex
         justify-content: flex-end
         flex-direction: column
     .main-hero
-        height: 100dvh
+        height: calc(59vh - 0.5rem)
     img
         height: 560px
         @media (max-width: 768px)
             height: 100px
             width: auto
-.main-text
-    text-transform: uppercase
-    //height: 10vh
-    width: 100%
-    border-block: 0.25rem solid $blanco
-    display: flex
-    justify-content: center
-    align-items: center
-    background-color: rgba(0,0,0,0.5 )
-    text-align: center
-    animation-name: titulos
-    animation-duration: 1s
-    animation-delay: 0.5s
-    animation-fill-mode: forwards
-    @media ( max-width: 991px )
-        height: auto        
-        padding-block: 1.5rem    
-    h2
-        font-size: clamp(2rem, 2.5vw, 3.5rem)
+    .main-text
+        text-transform: uppercase
+        height: 10vh
+        width: 100%
+        border-block: 0.25rem solid $blanco
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: rgba(0,0,0,0.5 )
+        text-align: center
+        animation-name: titulos
+        animation-duration: 1s
+        animation-delay: 0.5s
+        animation-fill-mode: forwards
+        @media ( max-width: 991px )
+            height: auto        
+            padding-block: 1.5rem    
+        h2
+            font-size: clamp(2rem, 2.5vw, 3.5rem)
+            font-family: $main-text
+            font-weight: 300
+            padding: 3rem 0
+    .makeup-block
         font-family: $main-text
         font-weight: 300
-        padding: 3rem 0
-
-.makeup-block
-    font-family: $main-text
-    font-weight: 300
-    text-transform: uppercase
-    background-color: rgba(0,0,0, 1 )
-    font-size: clamp(2.1rem, 2.5vw, 2.8rem)
-    //padding-block: 2rem
-    //height: 8vh
-    animation-name: titulos
-    animation-duration: 1s
-    animation-delay: 0.75s
-    animation-fill-mode: forwards
-    .bi
-        color: $rojo
-    div
-        padding: 3rem 0
-        border-bottom: 1px solid #fff
-    a
-        color: $blanco
-        text-decoration: none
-        &:hover
-            color: $gris
-    @media (max-width: 991px) 
-        .makeup-block
-            padding-block: 0px
-            height: auto
-            margin: 0 auto
-            padding: 0
-        .makeup-block > div
-            border-bottom: 0.25rem solid $blanco
-            font-size: clamp(2.1rem, 2vw, 3rem)
-            padding-block: 1.5rem
-        img
-            /*width: 100%
-            object-fit: fill
-        
+        text-transform: uppercase
+        background-color: rgba(0,0,0, 1 )
+        font-size: clamp(2.1rem, 2.5vw, 2.8rem)
+        //padding-block: 2rem
+        //height: 8vh
+        animation-name: titulos
+        animation-duration: 1s
+        animation-delay: 0.75s
+        animation-fill-mode: forwards
+        .bi
+            color: $rojo
+        div
+            padding: 3rem 0
+            border-bottom: 1px solid #fff
+            a
+                color: $blanco
+                text-decoration: none
+                &:hover
+                    color: $gris
+            @media (max-width: 991px) 
+                .makeup-block
+                    padding-block: 0px
+                    height: auto
+                    margin: 0 auto
+                    padding: 0
+                .makeup-block > div
+                    border-bottom: 0.25rem solid $blanco
+                    font-size: clamp(2.1rem, 2vw, 3rem)
+                    padding-block: 1.5rem
+                img
+                    /*width: 100%
+                    object-fit: fill
+                
 #make-up
     height: 100dvh
     width: 100%
