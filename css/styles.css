@@ -203,9 +203,9 @@ header {
     width: auto;
   }
 }
-#home .main-text {
+
+.main-text {
   text-transform: uppercase;
-  height: 10vh;
   width: 100%;
   border-block: 0.25rem solid #fff;
   display: flex;
@@ -219,45 +219,46 @@ header {
   animation-fill-mode: forwards;
 }
 @media (max-width: 991px) {
-  #home .main-text {
+  .main-text {
     height: auto;
     padding-block: 1.5rem;
   }
 }
-#home .main-text h2 {
+.main-text h2 {
   font-size: clamp(2rem, 2.5vw, 3.5rem);
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
+  padding: 2rem 0;
 }
-#home .makeup-block {
+
+.makeup-block {
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.75);
   font-size: clamp(2.1rem, 2.5vw, 2.8rem);
   padding-block: 2rem;
-  height: 8vh;
   animation-name: titulos;
   animation-duration: 1s;
   animation-delay: 0.75s;
   animation-fill-mode: forwards;
 }
-#home .bi {
+.makeup-block .bi {
   color: #bd0000;
 }
 @media (max-width: 991px) {
-  #home .makeup-block {
+  .makeup-block .makeup-block {
     padding-block: 0px;
     height: auto;
     margin: 0 auto;
     padding: 0;
   }
-  #home .makeup-block > div {
+  .makeup-block .makeup-block > div {
     border-bottom: 0.25rem solid #fff;
     font-size: clamp(2.1rem, 2vw, 3rem);
     padding-block: 1.5rem;
   }
-  #home img {
+  .makeup-block img {
     /*width: 100% */
     -o-object-fit: fill;
        object-fit: fill;
