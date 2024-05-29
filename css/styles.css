@@ -136,10 +136,10 @@ header {
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgb(0, 0, 0);
     padding: 2.5em;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.75);
-    width: 100%;
+    width: 50%;
     transition: ease 0.5s;
     height: 100dvh;
   }
@@ -173,6 +173,16 @@ header {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes ingresoderecha {
+  0% {
+    opacity: 0;
+    transform: translateX(-75px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
 #home {
@@ -553,6 +563,11 @@ footer .input-group button .bi-send-check {
   font-weight: 200;
   margin: 0 auto;
   padding: 0 0;
+  animation-name: ingresoderecha;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 #acerca .main-heading h1 {
   padding: 0;
@@ -560,6 +575,11 @@ footer .input-group button .bi-send-check {
   font-size: clamp(7rem, 8vw + 1rem, 10rem);
   line-height: 0.85;
   font-weight: 400;
+  animation-name: ingresoderecha;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 #trabajos {
