@@ -16,11 +16,13 @@
 // owl carousel
 
 
-$(document).scroll(function(){
+$(document).scroll(function() {
   var y = $(this).scrollTop();
-  if (y>20){
+  var windowHeight = $(window).height(); // Get window height
+
+  if (y > windowHeight / 4) {
     $(".chevron").hide();
-  }else {
+  } else {
     $(".chevron").show();
   }
 });
