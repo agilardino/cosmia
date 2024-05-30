@@ -16,6 +16,23 @@
 // owl carousel
 
 
+$(document).scroll(function(){
+  var y = $(this).scrollTop();
+  if (y>20){
+    $(".chevron").hide();
+  }else {
+    $(".chevron").show();
+  }
+});
+
+$(document).scroll(function(){
+  var y = $(this).scrollTop();
+  if (y>100){
+    $("header").hide();
+  }else {
+    $("header").show();
+  }
+});
 
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields

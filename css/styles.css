@@ -703,16 +703,17 @@ figcaption img {
   padding: 10px 15px;
   box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.25);
   border-radius: 100%;
+  background: #0df053;
 }
 .whatsapp .bi {
-  color: #0df053;
-  padding: 10px;
+  color: #fff;
+  padding: 0px;
 }
 .whatsapp .bi:hover {
-  color: #fff;
+  color: #0df053;
 }
 .whatsapp:hover {
-  background: #0df053;
+  background: #fff;
 }
 
 .chevron {
@@ -721,9 +722,14 @@ figcaption img {
   position: fixed;
   bottom: 20px;
   left: 50%;
-  font-size: 0.75rem;
+  font-size: 2rem;
+  font-family: "Work Sans", sans-serif;
 }
 .chevron .bi {
   color: #fff;
   font-size: 4rem;
+}
+
+.is-hidden {
+  visibility: hidden;
 }/*# sourceMappingURL=styles.css.map */
