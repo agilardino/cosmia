@@ -309,9 +309,10 @@ header {
   text-align: center;
 }
 #make-up .texto-principal h2 {
-  font-size: clamp(7rem, 15vw - 1rem, 30rem);
+  font-size: clamp(10rem, 15vw - 1rem, 30rem);
   font-weight: 200;
   text-transform: uppercase;
+  font-weight: 400;
 }
 @media (max-width: 991px) {
   #make-up {
@@ -687,6 +688,17 @@ footer .input-group button .bi-send-check {
 .gallery .galeria:hover .overlay {
   opacity: 0.75;
   background-color: rgb(0, 0, 0);
+}
+.gallery .margenes {
+  margin-bottom: 3.75rem;
+}
+@media (max-width: 768px) {
+  .gallery span {
+    visibility: hidden;
+  }
+  .gallery .margenes {
+    margin-bottom: 0;
+  }
 }
 
 figcaption img {

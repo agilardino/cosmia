@@ -160,13 +160,12 @@ video
     text-align: center
     .texto-principal
         h2
-            font-size: clamp(7rem, calc(15vw - 1rem), 30rem)
+            font-size: clamp(10rem, calc(15vw - 1rem), 30rem)
             font-weight: 200
             text-transform: uppercase
-        
+            font-weight: 400        
     @media ( max-width: 991px )
         height: 100dvh
-    
 
 #agendar
     height: 100dvh
@@ -338,7 +337,6 @@ footer
                 font-size: 2rem
 
 // ESTILOS DE LAS PAGINAS INTERNAS
-
 #acerca
     width: 100%
     //background-color: $negro
@@ -463,6 +461,14 @@ footer
             .overlay
                 opacity: 0.75
                 background-color: rgba(0,0,0,1)
+    .margenes
+        margin-bottom: 3.75rem
+    @media ( max-width: 768px )
+        span
+            visibility: hidden
+        .margenes
+            margin-bottom: 0
+
 
 figcaption
     img
