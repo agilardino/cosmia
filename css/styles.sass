@@ -151,6 +151,7 @@ video
     background-image: url(../img/bg_2.png)
     background-repeat: no-repeat
     background-size: cover
+    background-position: center center
     display: flex
     justify-content: center
     align-content: center
@@ -158,13 +159,13 @@ video
     align-items: center
     text-align: center
     .texto-principal
-        -webkit-box-reflect: below -150px linear-gradient(transparent, rgba(0,0,0,1))
         h2
-            font-size: 300px
+            font-size: clamp(7rem, calc(15vw - 1rem), 30rem)
             font-weight: 200
+            text-transform: uppercase
         
     @media ( max-width: 991px )
-        height: fit-content
+        height: 100dvh
     
 
 #agendar

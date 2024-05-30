@@ -300,6 +300,7 @@ header {
   background-image: url(../img/bg_2.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -307,17 +308,14 @@ header {
   align-items: center;
   text-align: center;
 }
-#make-up .texto-principal {
-  -webkit-box-reflect: below -150px linear-gradient(transparent, rgb(0, 0, 0));
-}
 #make-up .texto-principal h2 {
-  font-size: 300px;
+  font-size: clamp(7rem, 15vw - 1rem, 30rem);
   font-weight: 200;
+  text-transform: uppercase;
 }
 @media (max-width: 991px) {
   #make-up {
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 100dvh;
   }
 }
 
