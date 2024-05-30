@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap')
 
 $blanco: #fff
-$rojo: #bd0000
+$rojo: #c40d31
 $gris: #606060
 $font-size: 1.6rem
 $titulos: 5rem
@@ -415,6 +415,10 @@ footer
         z-index: 1
         top: 20px
         background-color: $rojo
+        background-image: url(../img/qoute.png)
+        background-repeat: no-repeat
+        background-position: right bottom
+        background-size: 25%
         p
             font-size: 2rem
             color: $blanco
@@ -463,12 +467,17 @@ footer
                 background-color: rgba(0,0,0,1)
     .margenes
         margin-bottom: 3.75rem
+    p
+        font-size: 3rem
+        color: $rojo
+        text-transform: uppercase
+        padding-block: 2.5rem
+        font-weight: 300
     @media ( max-width: 768px )
         span
             visibility: hidden
         .margenes
             margin-bottom: 0
-
 
 figcaption
     img
@@ -502,6 +511,39 @@ figcaption
     .bi
         color: $blanco
         font-size: 4rem
-    
-.is-hidden
-    visibility: hidden
+
+#contacto
+    margin-top: 2rem
+    background-color: $negro
+    .redes-sociales
+        padding-block: 5rem
+        @media  ( max-width: 768px )
+           margin-block: 1.5rem
+        ul
+            font-family: $main-text
+            text-transform: uppercase
+            list-style: none
+            display: flex
+            justify-content: center
+            gap: 2rem
+            li
+                padding: 2rem
+                text-decoration: underline
+                font-size: clamp(1.85rem, 2.2vw, 2.75rem)
+                font-weight: 300
+                color: $blanco
+        @media (max-width: 768px) 
+            ul
+                flex-direction: column
+                align-items: center
+                li
+                    padding-block: 0.75rem
+    .info-contacto
+        padding: 5rem 1rem
+        p
+            font-family: $main-text
+            font-size: clamp(1.75rem, 2.5vw, 2.5rem)
+            line-height: 1.2
+            color: $blanco
+            text-transform: uppercase
+            font-weight: 300

@@ -156,7 +156,7 @@ header {
     text-transform: uppercase;
   }
   .nav-list li a:hover {
-    color: #bd0000;
+    color: #c40d31;
   }
 }
 @keyframes aparicion {
@@ -260,7 +260,7 @@ header {
   animation-fill-mode: forwards;
 }
 #home .makeup-block .bi {
-  color: #bd0000;
+  color: #c40d31;
 }
 #home .makeup-block div {
   padding: 3rem 0;
@@ -344,7 +344,7 @@ header {
 }
 #agendar .citas .bi-plus-lg {
   font-size: clamp(8rem, 10vw, 10rem);
-  color: #bd0000;
+  color: #c40d31;
   text-align: left;
 }
 @media (max-width: 991px) {
@@ -421,7 +421,7 @@ header {
   color: #fff;
 }
 #testimonio .menu_links ul li span {
-  color: #bd0000;
+  color: #c40d31;
   text-decoration: underline;
   font-size: clamp(3rem, 4vw, 4.5rem);
   font-weight: 400;
@@ -629,7 +629,11 @@ footer .input-group button .bi-send-check {
   right: 0;
   z-index: 1;
   top: 20px;
-  background-color: #bd0000;
+  background-color: #c40d31;
+  background-image: url(../img/qoute.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 25%;
 }
 #__contenido-secundario .bloquote p {
   font-size: 2rem;
@@ -691,6 +695,13 @@ footer .input-group button .bi-send-check {
 .gallery .margenes {
   margin-bottom: 3.75rem;
 }
+.gallery p {
+  font-size: 3rem;
+  color: #c40d31;
+  text-transform: uppercase;
+  padding-block: 2.5rem;
+  font-weight: 300;
+}
 @media (max-width: 768px) {
   .gallery span {
     visibility: hidden;
@@ -740,6 +751,50 @@ figcaption img {
   font-size: 4rem;
 }
 
-.is-hidden {
-  visibility: hidden;
+#contacto {
+  margin-top: 2rem;
+  background-color: #000;
+}
+#contacto .redes-sociales {
+  padding-block: 5rem;
+}
+@media (max-width: 768px) {
+  #contacto .redes-sociales {
+    margin-block: 1.5rem;
+  }
+}
+#contacto .redes-sociales ul {
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+#contacto .redes-sociales ul li {
+  padding: 2rem;
+  text-decoration: underline;
+  font-size: clamp(1.85rem, 2.2vw, 2.75rem);
+  font-weight: 300;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  #contacto .redes-sociales ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  #contacto .redes-sociales ul li {
+    padding-block: 0.75rem;
+  }
+}
+#contacto .info-contacto {
+  padding: 5rem 1rem;
+}
+#contacto .info-contacto p {
+  font-family: "Work Sans", sans-serif;
+  font-size: clamp(1.75rem, 2.5vw, 2.5rem);
+  line-height: 1.2;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
 }/*# sourceMappingURL=styles.css.map */
