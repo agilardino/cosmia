@@ -72,14 +72,15 @@ video
 
 #home
     width: 100%
-    height: 80dvh
+    height: 85dvh
     background-color: rgba(0 0 0 / 0.65)
     @media (max-width: 991px) 
         display: flex
         justify-content: flex-end
         flex-direction: column
+        height: auto
     .main-hero
-        height: calc(59vh - 0.5rem)
+        height: calc(65dvh - 1.5rem)
     img
         height: 560px
         @media (max-width: 768px)
@@ -465,3 +466,16 @@ footer
 figcaption
     img
         padding-left: 10rem
+
+.whatsapp
+    z-index: 999
+    position: fixed
+    bottom: 30px
+    right: 30px
+    padding: 10px 15px 
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.25)
+    border-radius: 100%
+    .bi 
+        color: #0df053
+        &:hover
+            color: white
