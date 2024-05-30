@@ -78,14 +78,14 @@ video
         display: flex
         justify-content: flex-end
         flex-direction: column
-        height: auto
+        height: 100dvh
     .main-hero
-        height: calc(65dvh - 1.4rem)
+        height: calc(65dvh - 1.3rem)
     img
-        height: 560px
+        height: 500px
         @media (max-width: 768px)
-            height: 100px
-            width: auto
+            height: 150px
+            // width: auto
     .main-text
         text-transform: uppercase
         height: 10vh
@@ -160,7 +160,7 @@ video
     text-align: center
     .texto-principal
         h2
-            font-size: clamp(10rem, calc(15vw - 1rem), 30rem)
+            font-size: clamp(7rem, calc(15vw - 1rem), 30rem)
             font-weight: 200
             text-transform: uppercase
             font-weight: 400        
@@ -495,7 +495,8 @@ figcaption
     z-index: 1000
     position: fixed
     bottom: 20px
-    left: 50%
+    left: 45%
+    transform: translateX(-50%)
     font-size: 2rem
     font-family: $main-text
     .bi

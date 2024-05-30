@@ -191,7 +191,7 @@ header {
 }
 @keyframes vermas {
   0% {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
   100% {
     transform: translateY(0);
@@ -207,19 +207,18 @@ header {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    height: auto;
+    height: 100dvh;
   }
 }
 #home .main-hero {
-  height: calc(65dvh - 1.4rem);
+  height: calc(65dvh - 1.3rem);
 }
 #home img {
-  height: 560px;
+  height: 500px;
 }
 @media (max-width: 768px) {
   #home img {
-    height: 100px;
-    width: auto;
+    height: 150px;
   }
 }
 #home .main-text {
@@ -309,7 +308,7 @@ header {
   text-align: center;
 }
 #make-up .texto-principal h2 {
-  font-size: clamp(10rem, 15vw - 1rem, 30rem);
+  font-size: clamp(7rem, 15vw - 1rem, 30rem);
   font-weight: 200;
   text-transform: uppercase;
   font-weight: 400;
@@ -731,7 +730,8 @@ figcaption img {
   z-index: 1000;
   position: fixed;
   bottom: 20px;
-  left: 50%;
+  left: 45%;
+  transform: translateX(-50%);
   font-size: 2rem;
   font-family: "Work Sans", sans-serif;
 }

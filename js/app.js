@@ -20,7 +20,7 @@ $(document).scroll(function() {
   var y = $(this).scrollTop();
   var windowHeight = $(window).height(); // Get window height
 
-  if (y > windowHeight / 4) {
+  if (y > windowHeight / 10) {
     $(".chevron").hide();
   } else {
     $(".chevron").show();
@@ -29,7 +29,7 @@ $(document).scroll(function() {
 
 $(document).scroll(function(){
   var y = $(this).scrollTop();
-  if (y>100){
+  if (y>50){
     $("header").hide();
   }else {
     $("header").show();
