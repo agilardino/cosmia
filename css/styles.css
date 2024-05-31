@@ -199,7 +199,7 @@ header {
 }
 #home {
   width: 100%;
-  height: 85dvh;
+  height: 88dvh;
   background-color: rgba(0, 0, 0, 0.65);
 }
 @media (max-width: 991px) {
@@ -211,7 +211,7 @@ header {
   }
 }
 #home .main-hero {
-  height: calc(65dvh - 1.3rem);
+  height: calc(65dvh - 2.35rem);
 }
 #home img {
   height: 500px;
@@ -223,9 +223,9 @@ header {
 }
 #home .main-text {
   text-transform: uppercase;
-  height: 10vh;
+  height: 13.75dvh;
   width: 100%;
-  border-block: 0.25rem solid #fff;
+  border-block: 0.1rem solid #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,17 +243,17 @@ header {
   }
 }
 #home .main-text h2 {
-  font-size: clamp(2rem, 2.5vw, 3.5rem);
+  font-size: clamp(1.9rem, 2.25vw, 2.5rem);
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   padding: 3rem 0;
 }
 #home .makeup-block {
   font-family: "Work Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   text-transform: uppercase;
   background-color: rgb(0, 0, 0);
-  font-size: clamp(2.1rem, 2.5vw, 2.8rem);
+  font-size: clamp(2.5rem, 3.5vw, 5rem);
   animation-name: titulos;
   animation-duration: 1s;
   animation-delay: 0.75s;
@@ -264,7 +264,6 @@ header {
 }
 #home .makeup-block div {
   padding: 3rem 0;
-  border-bottom: 1px solid #fff;
 }
 #home .makeup-block div a {
   color: #fff;
@@ -281,7 +280,6 @@ header {
     padding: 0;
   }
   #home .makeup-block div .makeup-block > div {
-    border-bottom: 0.25rem solid #fff;
     font-size: clamp(2.1rem, 2vw, 3rem);
     padding-block: 1.5rem;
   }
@@ -308,10 +306,9 @@ header {
   text-align: center;
 }
 #make-up .texto-principal h2 {
-  font-size: clamp(7rem, 15vw - 1rem, 30rem);
-  font-weight: 200;
+  font-size: clamp(7rem, 15vw - 1rem, 21rem);
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 100;
 }
 @media (max-width: 991px) {
   #make-up {
@@ -741,7 +738,7 @@ figcaption img {
   z-index: 1000;
   position: fixed;
   bottom: 20px;
-  left: 45%;
+  left: 50%;
   transform: translateX(-50%);
   font-size: 2rem;
   font-family: "Work Sans", sans-serif;

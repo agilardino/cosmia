@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap')
 
 $blanco: #fff
+$rosa: #ab1a2d
 $rojo: #c40d31
 $gris: #606060
 $font-size: 1.6rem
@@ -72,7 +73,7 @@ video
 
 #home
     width: 100%
-    height: 85dvh
+    height: 88dvh
     background-color: rgba(0 0 0 / 0.65)
     @media (max-width: 991px) 
         display: flex
@@ -80,7 +81,7 @@ video
         flex-direction: column
         height: 100dvh
     .main-hero
-        height: calc(65dvh - 1.3rem)
+        height: calc(65dvh - 2.35rem)
     img
         height: 500px
         @media (max-width: 768px)
@@ -88,9 +89,9 @@ video
             // width: auto
     .main-text
         text-transform: uppercase
-        height: 10vh
+        height: 13.75dvh
         width: 100%
-        border-block: 0.25rem solid $blanco
+        border-block: 0.10rem solid $blanco
         display: flex
         justify-content: center
         align-items: center
@@ -104,16 +105,16 @@ video
             height: auto        
             padding-block: 1.5rem    
         h2
-            font-size: clamp(2rem, 2.5vw, 3.5rem)
+            font-size: clamp(1.90rem, 2.25vw, 2.5rem)
             font-family: $main-text
             font-weight: 300
             padding: 3rem 0
     .makeup-block
         font-family: $main-text
-        font-weight: 300
+        font-weight: 200
         text-transform: uppercase
         background-color: rgba(0,0,0, 1 )
-        font-size: clamp(2.1rem, 2.5vw, 2.8rem)
+        font-size: clamp(2.5rem, 3.5vw, 5rem)
         //padding-block: 2rem
         //height: 8vh
         animation-name: titulos
@@ -124,7 +125,6 @@ video
             color: $rojo
         div
             padding: 3rem 0
-            border-bottom: 1px solid #fff
             a
                 color: $blanco
                 text-decoration: none
@@ -137,7 +137,7 @@ video
                     margin: 0 auto
                     padding: 0
                 .makeup-block > div
-                    border-bottom: 0.25rem solid $blanco
+                    //border-bottom: 0.20rem solid $blanco
                     font-size: clamp(2.1rem, 2vw, 3rem)
                     padding-block: 1.5rem
                 img
@@ -160,10 +160,9 @@ video
     text-align: center
     .texto-principal
         h2
-            font-size: clamp(7rem, calc(15vw - 1rem), 30rem)
-            font-weight: 200
+            font-size: clamp(7rem, calc(15vw - 1rem), 21rem)
             text-transform: uppercase
-            font-weight: 400        
+            font-weight: 100        
     @media ( max-width: 991px )
         height: 100dvh
 
@@ -504,7 +503,7 @@ figcaption
     z-index: 1000
     position: fixed
     bottom: 20px
-    left: 45%
+    left: 50%
     transform: translateX(-50%)
     font-size: 2rem
     font-family: $main-text
