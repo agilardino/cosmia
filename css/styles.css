@@ -301,19 +301,38 @@ header {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin: 0 auto;
   align-items: center;
-  text-align: center;
+}
+#make-up .texto-principal {
+  width: 90%;
+  text-align: left;
+  padding-left: 100px;
 }
 #make-up .texto-principal h2 {
   font-size: clamp(7rem, 15vw - 1rem, 21rem);
   text-transform: uppercase;
   font-weight: 100;
+  line-height: 0.75;
+}
+#make-up .texto-principal span {
+  color: #ab1a2d;
 }
 @media (max-width: 991px) {
   #make-up {
     height: 100dvh;
+    padding: 0;
   }
+}
+
+.cosmia-contacto {
+  background-color: #000;
+}
+
+.main-contact {
+  width: 100%;
+  background-color: #000;
+  padding: 0;
+  margin: 0;
 }
 
 #agendar {
