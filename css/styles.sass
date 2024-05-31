@@ -170,14 +170,29 @@ video
     @media ( max-width: 991px )
         height: 100dvh
         padding: 0
+
 .cosmia-contacto
     background-color: $negro
-.main-contact
     width: 100%
-    background-color: $negro
-    padding: 0
-    margin: 0
-
+    display: grid
+    grid-template-rows: repeat(3, 1fr)
+    .cosmia-estudio, .cosmia-salon, .cosmia-school        
+        padding-block: 2rem
+        padding-inline: 10rem
+        border-block: 1px solid $rosa
+        cursor: pointer
+        h3
+            font-size: 5rem
+            text-transform: uppercase
+            font-weight: 200 
+        .bi
+            color: $rosa
+            margin-inline: 1.5rem
+        &:hover
+            background-color: $rosa
+            .bi
+                color: $blanco
+        
 #agendar
     height: 100dvh
     width: 100%

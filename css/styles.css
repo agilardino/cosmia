@@ -326,13 +326,30 @@ header {
 
 .cosmia-contacto {
   background-color: #000;
-}
-
-.main-contact {
   width: 100%;
-  background-color: #000;
-  padding: 0;
-  margin: 0;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+.cosmia-contacto .cosmia-estudio, .cosmia-contacto .cosmia-salon, .cosmia-contacto .cosmia-school {
+  padding-block: 2rem;
+  padding-inline: 10rem;
+  border-block: 1px solid #ab1a2d;
+  cursor: pointer;
+}
+.cosmia-contacto .cosmia-estudio h3, .cosmia-contacto .cosmia-salon h3, .cosmia-contacto .cosmia-school h3 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.cosmia-contacto .cosmia-estudio .bi, .cosmia-contacto .cosmia-salon .bi, .cosmia-contacto .cosmia-school .bi {
+  color: #ab1a2d;
+  margin-inline: 1.5rem;
+}
+.cosmia-contacto .cosmia-estudio:hover, .cosmia-contacto .cosmia-salon:hover, .cosmia-contacto .cosmia-school:hover {
+  background-color: #ab1a2d;
+}
+.cosmia-contacto .cosmia-estudio:hover .bi, .cosmia-contacto .cosmia-salon:hover .bi, .cosmia-contacto .cosmia-school:hover .bi {
+  color: #fff;
 }
 
 #agendar {
