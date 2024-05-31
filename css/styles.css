@@ -304,7 +304,6 @@ header {
   align-items: center;
 }
 #make-up .texto-principal {
-  width: 85%;
   text-align: left;
   padding-left: 100px;
 }
@@ -315,7 +314,7 @@ header {
   line-height: 0.75;
 }
 #make-up .texto-principal span {
-  color: #ab1a2d;
+  color: #d60029;
 }
 @media (max-width: 991px) {
   #make-up {
@@ -333,7 +332,7 @@ header {
 .cosmia-contacto .cosmia-estudio, .cosmia-contacto .cosmia-salon, .cosmia-contacto .cosmia-school {
   padding-block: 2rem;
   padding-inline: 5rem;
-  border-block: 1px solid #ab1a2d;
+  border-block: 1px solid #d60029;
   cursor: pointer;
 }
 .cosmia-contacto .cosmia-estudio h3, .cosmia-contacto .cosmia-salon h3, .cosmia-contacto .cosmia-school h3 {
@@ -342,11 +341,11 @@ header {
   font-weight: 200;
 }
 .cosmia-contacto .cosmia-estudio .bi, .cosmia-contacto .cosmia-salon .bi, .cosmia-contacto .cosmia-school .bi {
-  color: #ab1a2d;
+  color: #d60029;
   margin-inline: 1rem;
 }
 .cosmia-contacto .cosmia-estudio:hover, .cosmia-contacto .cosmia-salon:hover, .cosmia-contacto .cosmia-school:hover {
-  background-color: #ab1a2d;
+  background-color: #d60029;
 }
 .cosmia-contacto .cosmia-estudio:hover .bi, .cosmia-contacto .cosmia-salon:hover .bi, .cosmia-contacto .cosmia-school:hover .bi {
   color: #fff;
