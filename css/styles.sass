@@ -124,12 +124,20 @@ video
         .bi
             color: $rojo
         div
-            padding: 3rem 0
+            transition: .5s ease-in-out
+            &:hover
+                background-color: $rosa
+                transition: .5s ease-in-out
             a
                 color: $blanco
                 text-decoration: none
+                display: block
+                height: 108px
+                padding-block: 1.25rem
                 &:hover
-                    color: $gris
+                    color: $blanco
+                    .bi 
+                        color: $blanco
             @media (max-width: 991px) 
                 .makeup-block
                     padding-block: 0px
@@ -180,6 +188,7 @@ video
         padding-inline: 5rem
         border-block: 1px solid $rosa
         cursor: pointer
+        transition: .5s ease-in-out
         h3
             font-size: clamp(2.9rem, 5vw, 5rem) 
             text-transform: uppercase

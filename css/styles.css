@@ -263,14 +263,24 @@ header {
   color: #c40d31;
 }
 #home .makeup-block div {
-  padding: 3rem 0;
+  transition: 0.5s ease-in-out;
+}
+#home .makeup-block div:hover {
+  background-color: #d60029;
+  transition: 0.5s ease-in-out;
 }
 #home .makeup-block div a {
   color: #fff;
   text-decoration: none;
+  display: block;
+  height: 108px;
+  padding-block: 1.25rem;
 }
 #home .makeup-block div a:hover {
-  color: #606060;
+  color: #fff;
+}
+#home .makeup-block div a:hover .bi {
+  color: #fff;
 }
 @media (max-width: 991px) {
   #home .makeup-block div .makeup-block {
@@ -334,6 +344,7 @@ header {
   padding-inline: 5rem;
   border-block: 1px solid #d60029;
   cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
 .cosmia-contacto .cosmia-estudio h3, .cosmia-contacto .cosmia-salon h3, .cosmia-contacto .cosmia-school h3 {
   font-size: clamp(2.9rem, 5vw, 5rem);
