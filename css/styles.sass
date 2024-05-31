@@ -157,11 +157,11 @@ video
     align-content: center
     align-items: center
     .texto-principal
-        width: 90%
+        width: min(85%, 100%)
         text-align: left
         padding-left: 100px
         h2
-            font-size: clamp(7rem, calc(15vw - 1rem), 21rem)
+            font-size: clamp(5rem, calc(15vw - 1rem), 21rem)
             text-transform: uppercase
             font-weight: 100
             line-height: .75
@@ -178,16 +178,16 @@ video
     grid-template-rows: repeat(3, 1fr)
     .cosmia-estudio, .cosmia-salon, .cosmia-school        
         padding-block: 2rem
-        padding-inline: 10rem
+        padding-inline: 5rem
         border-block: 1px solid $rosa
         cursor: pointer
         h3
-            font-size: 5rem
+            font-size: clamp(2.9rem, 5vw, 5rem) 
             text-transform: uppercase
             font-weight: 200 
         .bi
             color: $rosa
-            margin-inline: 1.5rem
+            margin-inline: 1rem
         &:hover
             background-color: $rosa
             .bi

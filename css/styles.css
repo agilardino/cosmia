@@ -304,12 +304,12 @@ header {
   align-items: center;
 }
 #make-up .texto-principal {
-  width: 90%;
+  width: 85%;
   text-align: left;
   padding-left: 100px;
 }
 #make-up .texto-principal h2 {
-  font-size: clamp(7rem, 15vw - 1rem, 21rem);
+  font-size: clamp(5rem, 15vw - 1rem, 21rem);
   text-transform: uppercase;
   font-weight: 100;
   line-height: 0.75;
@@ -332,18 +332,18 @@ header {
 }
 .cosmia-contacto .cosmia-estudio, .cosmia-contacto .cosmia-salon, .cosmia-contacto .cosmia-school {
   padding-block: 2rem;
-  padding-inline: 10rem;
+  padding-inline: 5rem;
   border-block: 1px solid #ab1a2d;
   cursor: pointer;
 }
 .cosmia-contacto .cosmia-estudio h3, .cosmia-contacto .cosmia-salon h3, .cosmia-contacto .cosmia-school h3 {
-  font-size: 5rem;
+  font-size: clamp(2.9rem, 5vw, 5rem);
   text-transform: uppercase;
   font-weight: 200;
 }
 .cosmia-contacto .cosmia-estudio .bi, .cosmia-contacto .cosmia-salon .bi, .cosmia-contacto .cosmia-school .bi {
   color: #ab1a2d;
-  margin-inline: 1.5rem;
+  margin-inline: 1rem;
 }
 .cosmia-contacto .cosmia-estudio:hover, .cosmia-contacto .cosmia-salon:hover, .cosmia-contacto .cosmia-school:hover {
   background-color: #ab1a2d;
