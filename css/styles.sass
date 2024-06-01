@@ -242,7 +242,27 @@ video
             width: 50%
             font-weight: 400
             font-kerning: 2rem
-
+#video-section
+    background: url(../img/bg-video.png) no-repeat center center
+    height: 800px
+    background-size: cover
+    display: flex
+    width: 100%
+    justify-content: center
+    align-items: center
+    color: $blanco
+    .button  
+      font-size: clamp(3rem, calc( 5vw - 1rem ), 8.33rem)
+      font-weight: 100 
+      color: $blanco
+      text-decoration: none
+      background: none
+      border: none
+      display: block
+      &:hover
+        color: $rosa
+    .modal-body
+        width: 120ch
 #testimonio
     padding-block: 5rem
     width: 100%

@@ -415,6 +415,32 @@ header {
   }
 }
 
+#video-section {
+  background: url(../img/bg-video.png) no-repeat center center;
+  height: 800px;
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+#video-section .button {
+  font-size: clamp(3rem, 5vw - 1rem, 8.33rem);
+  font-weight: 100;
+  color: #fff;
+  text-decoration: none;
+  background: none;
+  border: none;
+  display: block;
+}
+#video-section .button:hover {
+  color: #d60029;
+}
+#video-section .modal-body {
+  width: 120ch;
+}
+
 #testimonio {
   padding-block: 5rem;
   width: 100%;
