@@ -441,22 +441,21 @@ header {
 #testimonio {
   padding-block: 5rem;
   width: 100%;
-  height: 100dvh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 768px) {
   #testimonio {
-    height: 100dvh;
     padding-block: 1.5rem;
   }
 }
 #testimonio .texto-testimonio {
   font-family: "Work Sans", sans-serif;
-  font-size: clamp(2rem, 2vw, 2.5rem);
+  font-size: clamp(2rem, 2vw, 3rem);
   font-weight: 100;
-  max-width: 75ch;
+  max-width: 60ch;
+  line-height: 2em;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
@@ -502,7 +501,7 @@ header {
   }
 }
 #testimonio .redes-sociales {
-  margin-block: 5rem;
+  margin-block: 7rem;
 }
 @media (max-width: 768px) {
   #testimonio .redes-sociales {
@@ -520,7 +519,7 @@ header {
 #testimonio .redes-sociales ul li {
   padding: 2rem;
   text-decoration: underline;
-  font-size: clamp(1.85rem, 2.2vw, 2.75rem);
+  font-size: clamp(1.5rem, 2.2vw, 2.5rem);
   font-weight: 300;
   color: #fff;
 }

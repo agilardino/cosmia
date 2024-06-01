@@ -266,18 +266,17 @@ video
 #testimonio
     padding-block: 5rem
     width: 100%
-    height: 100dvh
-    background-color: rgba(0, 0, 0, .5)
+    background-color: rgba(0, 0, 0, 1)
     display: flex
     justify-content: space-between
     @media (max-width: 768px)
-        height: 100dvh
         padding-block: 1.5rem
     .texto-testimonio
         font-family: $main-text
-        font-size: clamp(2rem, 2vw, 2.5rem)
+        font-size: clamp(2rem, 2vw, 3rem)
         font-weight: 100
-        max-width: 75ch
+        max-width: 60ch
+        line-height: 2em
         margin: 0 auto
         @media  ( max-width: 768px  )
             span
@@ -311,7 +310,7 @@ video
                 li
                     padding-block: 0.75rem
     .redes-sociales
-        margin-block: 5rem
+        margin-block: 7rem
         @media  ( max-width: 768px )
            margin-block: 1.5rem
         ul
@@ -324,7 +323,7 @@ video
             li
                 padding: 2rem
                 text-decoration: underline
-                font-size: clamp(1.85rem, 2.2vw, 2.75rem)
+                font-size: clamp(1.5rem, 2.2vw, 2.5rem)
                 font-weight: 300
                 color: $blanco
         @media (max-width: 768px) 
