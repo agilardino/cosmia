@@ -437,9 +437,6 @@ header {
 #video-section .button:hover {
   color: #d60029;
 }
-#video-section .modal-body {
-  width: 120ch;
-}
 
 #testimonio {
   padding-block: 5rem;
