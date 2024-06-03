@@ -27,6 +27,17 @@ $(document).scroll(function() {
   }
 });
 
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  var windowHeight = $(window).height(); // Get window height
+
+  if (y > windowHeight / 8) {
+    $(".whatsapp").show();
+  } else {
+    $(".whatsapp").hide();
+  }
+});
+
 $(document).scroll(function(){
   var y = $(this).scrollTop();
   if (y>50){

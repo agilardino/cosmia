@@ -482,7 +482,7 @@ header {
 }
 @media (max-width: 768px) {
   #testimonio .menu_links {
-    margin-block: 2rem;
+    margin-block: 4rem;
   }
 }
 #testimonio .menu_links ul {
@@ -511,15 +511,15 @@ header {
     align-items: center;
   }
   #testimonio .menu_links ul li {
-    padding-block: 0.75rem;
+    padding-block: 1rem;
   }
 }
 #testimonio .redes-sociales {
-  margin-block: 7rem;
+  margin-block: 5rem;
 }
 @media (max-width: 768px) {
   #testimonio .redes-sociales {
-    margin-block: 1.5rem;
+    margin-block: 3rem;
   }
 }
 #testimonio .redes-sociales ul {
@@ -533,7 +533,7 @@ header {
 #testimonio .redes-sociales ul li {
   padding: 2rem;
   text-decoration: underline;
-  font-size: clamp(1.5rem, 2.2vw, 2.5rem);
+  font-size: clamp(1.85rem, 2.2vw, 2.5rem);
   font-weight: 300;
   color: #fff;
 }
@@ -543,7 +543,8 @@ header {
     align-items: center;
   }
   #testimonio .redes-sociales ul li {
-    padding-block: 0.75rem;
+    padding: 2rem 0 2rem 0;
+    display: block;
   }
 }
 #testimonio .info-contacto p {
@@ -553,6 +554,7 @@ header {
   color: #fff;
   text-transform: uppercase;
   font-weight: 300;
+  display: block;
 }
 
 .face-off {
@@ -801,6 +803,7 @@ figcaption img {
   right: 30px;
   padding: 10px 15px;
   box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s;
   border-radius: 100%;
   background: #0df053;
 }

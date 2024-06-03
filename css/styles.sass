@@ -292,7 +292,7 @@ video
     .menu_links
         margin-block: 5rem
         @media  ( max-width: 768px )
-           margin-block: 2rem
+           margin-block: 4rem
         ul
             font-family: $main-text
             text-transform: uppercase
@@ -315,11 +315,11 @@ video
                 flex-direction: column
                 align-items: center
                 li
-                    padding-block: 0.75rem
+                    padding-block: 1rem
     .redes-sociales
-        margin-block: 7rem
+        margin-block: 5rem
         @media  ( max-width: 768px )
-           margin-block: 1.5rem
+           margin-block: 3rem
         ul
             font-family: $main-text
             text-transform: uppercase
@@ -330,7 +330,7 @@ video
             li
                 padding: 2rem
                 text-decoration: underline
-                font-size: clamp(1.5rem, 2.2vw, 2.5rem)
+                font-size: clamp(1.85rem, 2.2vw, 2.5rem)
                 font-weight: 300
                 color: $blanco
         @media (max-width: 768px) 
@@ -338,7 +338,8 @@ video
                 flex-direction: column
                 align-items: center
                 li
-                    padding-block: 0.75rem
+                    padding: 2rem 0 2rem 0
+                    display: block
     .info-contacto
         p
             font-family: $main-text
@@ -347,6 +348,7 @@ video
             color: $blanco
             text-transform: uppercase
             font-weight: 300
+            display: block
 .face-off
     display: none
     @media (max-width: 768px) 
@@ -550,6 +552,7 @@ figcaption
     right: 30px
     padding: 10px 15px 
     box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.25)
+    transition:  all .5s
     border-radius: 100%
     background: #0df053
     .bi 
