@@ -84,7 +84,7 @@ video
     .main-hero
         height: calc(66dvh - 2.35rem)
         @media ( max-width: 991px )
-            height: 88dvh
+            height: 82dvh
     img
         height: 500px
         @media (max-width: 768px)
@@ -124,6 +124,8 @@ video
         animation-duration: 1s
         animation-delay: 0.75s
         animation-fill-mode: forwards
+        @media ( max-width: 768px )
+            height: 75px            
         .bi
             color: $rojo
         div
@@ -144,7 +146,7 @@ video
             @media (max-width: 991px) 
                 .makeup-block
                     padding-block: 0px
-                    height: auto
+                    height: 120px
                     margin: 0 auto
                     padding: 0
                 .makeup-block > div
@@ -199,7 +201,7 @@ video
         cursor: pointer
         transition: .5s ease-in-out
         h3
-            font-size: clamp(2.9rem, 5vw, 5rem) 
+            font-size: clamp(2.15rem, 5vw, 5rem) 
             text-transform: uppercase
             font-weight: 200 
         .bi
@@ -220,7 +222,7 @@ video
         height: 100dvh
         display: flex
         justify-content: center
-        align-items: center
+        align-items: flex-start
         flex-direction: column
         align-content: flex-start
         text-align: left
@@ -241,14 +243,14 @@ video
                 padding-left: 1rem
     
     .agenda
-        width: 300px
+        width: 310px
         text-transform: uppercase
-        font-size: clamp(3rem, 5vw, 6rem)
+        font-size: clamp(3.5rem, 5vw, 6rem)
         font-family: $main-text
         font-weight: 300
         text-justify: justify
         @media (max-width: 991px) 
-            width: 50%
+            width: 15ch
             font-weight: 400
             font-kerning: 2rem
 #video-section
