@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap')
-
 $blanco: #fff
 $rosa: #d60029
 $rojo: #c40d31
@@ -30,11 +29,8 @@ body
 
 h1, h2, h3, h4 
     text-wrap: balance
-
 p
     text-wrap: pretty
-
-
 .owl-carousel
     img
         aspect-ratio: 3 / 4
@@ -53,7 +49,6 @@ video
         aspect-ratio: 3 / 4
         @media (max-width: 768px) 
             height: 100dvh
-
 .logo_principal    
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(63deg) brightness(107%) contrast(101%)
     animation-name: aparicion
@@ -67,7 +62,6 @@ video
         rotate: 0deg
         max-width: 300px
         
-
 @import _navegacion
 
 @import _animacion
@@ -409,6 +403,7 @@ footer
     height: calc( 800px - 10vh )
     text-transform: uppercase
     display: flex
+    color: $blanco
     @media ( max-width: 991 )
         height: 100dvh
         
@@ -421,9 +416,9 @@ footer
         justify-content: center
     .sub-heading
         h2
-            font-size: clamp(3rem, calc(4vw + 2rem), 5rem)
+            font-size: clamp(2rem, calc(3vw + 2rem), 5rem)
             font-family: $main-text
-            font-weight: 200
+            font-weight: 100
             margin: 0 auto
             padding: 0 0
             animation-name: ingresoderecha
@@ -435,7 +430,7 @@ footer
         h1
             padding: 0
             margin: 0
-            font-size: clamp(7rem, calc(8vw + 1rem), 10rem)
+            font-size: clamp(7rem, calc(8vw + 1rem), 15rem)
             line-height: 0.85
             font-weight: 400
             animation-name: ingresoderecha
@@ -443,6 +438,7 @@ footer
             animation-delay: 0.3s
             animation-fill-mode: forwards
             opacity: 0
+            font-family: $main-text
 
 #trabajos
     width: 100%
@@ -452,15 +448,16 @@ footer
     .descripcion
         font-family: $main-text
         font-size: 1.83rem
-        line-height: 2
+        line-height: 1.85
         font-weight: 400
-        width: min(90%, 750px)
+        width: 40ch
         p
             &:nth-child(1)
-                font-size: 2.33rem
-                line-height: 2
-                
-
+                padding-top: 2.5rem
+                font-size: 2.667rem
+                line-height: 1.85
+                text-wrap: pretty
+               
 #__contenido-secundario
     padding-block: 5rem
     p
@@ -481,14 +478,14 @@ footer
         z-index: 1
         top: 20px
         background-color: $rojo
-        background-image: url(../img/qoute.png)
-        background-repeat: no-repeat
-        background-position: right bottom
-        background-size: 25%
         p
-            font-size: 2rem
             color: $blanco
-            padding: 3rem
+            padding: 1.5rem
+            &:nth-child(1)
+                font-size: 1.83rem
+            &:nth-child(2)
+                font-size: 2.66rem
+                
         @media ( max-width: 991px )
             position: relative
             z-index: auto 
@@ -501,6 +498,9 @@ footer
         font-size: 2rem
         color: $blanco
         padding-left: 2rem 
+    .descripcion
+        font-size: 1.83rem
+        max-width: 85ch
               
 .gallery
     h2
