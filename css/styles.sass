@@ -176,8 +176,14 @@ video
         span
             color: $rosa      
     @media ( max-width: 991px )
-        height: 100dvh
+        height: 75dvh
         padding: 0
+
+.carousel-item 
+    transition: transform 5s ease-in-out
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end 
+    transition: opacity 0s 3s
 
 .cosmia-contacto
     background-color: $negro
@@ -262,7 +268,8 @@ video
       display: block
       &:hover
         color: $rosa
-          
+    @media  ( max-width: 768px )
+        height: 50dvh
 #testimonio
     padding-block: 5rem
     width: 100%

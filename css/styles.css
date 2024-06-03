@@ -328,9 +328,18 @@ header {
 }
 @media (max-width: 991px) {
   #make-up {
-    height: 100dvh;
+    height: 75dvh;
     padding: 0;
   }
+}
+
+.carousel-item {
+  transition: transform 5s ease-in-out;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 3s;
 }
 
 .cosmia-contacto {
@@ -436,6 +445,11 @@ header {
 }
 #video-section .button:hover {
   color: #d60029;
+}
+@media (max-width: 768px) {
+  #video-section {
+    height: 50dvh;
+  }
 }
 
 #testimonio {
