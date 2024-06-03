@@ -31,7 +31,7 @@ $(document).scroll(function() {
   var y = $(this).scrollTop();
   var windowHeight = $(window).height(); // Get window height
 
-  if (y > windowHeight / 10) {
+  if (y > windowHeight / 20) {
     $(".whatsapp").show();
   } else {
     $(".whatsapp").hide();
