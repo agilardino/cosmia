@@ -211,7 +211,7 @@ header {
   }
 }
 #home .main-hero {
-  height: calc(65dvh - 2.35rem);
+  height: calc(66dvh - 2.35rem);
 }
 #home img {
   height: 500px;
@@ -452,9 +452,9 @@ header {
 }
 #testimonio .texto-testimonio {
   font-family: "Work Sans", sans-serif;
-  font-size: clamp(2rem, 2vw, 3rem);
+  font-size: clamp(2rem, 2vw, 2.5rem);
   font-weight: 100;
-  max-width: 60ch;
+  max-width: 55ch;
   line-height: 2em;
   margin: 0 auto;
 }
