@@ -9,6 +9,7 @@ $main-text: "Work Sans", sans-serif
 $negro: #000
 $input-color: $negro
 $input-group-addon-color: $input-color
+$seccion-width: 100%
 
 *
     box-sizing: border-box
@@ -67,7 +68,7 @@ video
 @import _animacion
 
 #home
-    width: 100%
+    width: $seccion-width
     height: 88dvh
     background-color: rgba(0 0 0 / 0.65)
     @media (max-width: 991px) 
@@ -153,7 +154,7 @@ video
                 
 #make-up
     height: 100dvh
-    width: 100%
+    width: $seccion-width
     background-color: $negro
     background-image: url(../img/bg_2.png)
     background-repeat: no-repeat
@@ -185,7 +186,7 @@ video
 
 .cosmia-contacto
     background-color: $negro
-    width: 100%
+    width: $seccion-width
     display: grid
     grid-template-rows: repeat(3, 1fr)
     .cosmia-estudio, .cosmia-salon, .cosmia-school        
@@ -208,7 +209,7 @@ video
         
 #agendar
     height: 100dvh
-    width: 100%
+    width: $seccion-width
     background-image: url(../img/bg_3_luciana_cita.png)
     background-size: cover
     background-position: center center
@@ -252,7 +253,7 @@ video
     height: 800px
     background-size: cover
     display: flex
-    width: 100%
+    width: $seccion-width
     justify-content: center
     align-items: center
     color: $blanco
@@ -269,13 +270,13 @@ video
     @media  ( max-width: 768px )
         height: 50dvh
 #testimonio
-    padding-block: 5rem
-    width: 100%
+    padding-block:clamp(1.5rem, 3.5vw, 5rem)
+    width: $seccion-width
     background-color: rgba(0, 0, 0, 1)
     display: flex
     justify-content: space-between
-    @media (max-width: 768px)
-        padding-block: 1.5rem
+    //@media (max-width: 768px)
+     //   padding-block: 1.5rem
     .texto-testimonio
         font-family: $main-text
         font-size: clamp(2rem, 2vw, 2.5rem)
@@ -327,10 +328,15 @@ video
             gap: 2rem
             li
                 padding: 2rem
-                text-decoration: underline
                 font-size: clamp(1.85rem, 2.2vw, 2.5rem)
                 font-weight: 300
-                color: $blanco
+                a
+                    color: $blanco
+                    text-decoration: none
+                    &:hover
+                        color: $rosa
+                        padding-bottom: 10px
+                        border-bottom: 1px solid $rosa                         
         @media (max-width: 768px) 
             ul
                 flex-direction: column
@@ -339,6 +345,7 @@ video
                     padding: 2rem 0 2rem 0
                     display: block
     .info-contacto
+        margin-bottom: 5rem
         p
             font-family: $main-text
             font-size: clamp(1.75rem, 2.5vw, 2.5rem)
@@ -356,14 +363,13 @@ video
             object-fit: cover
     
 footer
-    width: 100%
+    width: $seccion-width
     padding-block: 5rem
     background: $blanco
     img
         width: 500px
     .iconos-rrss
         color: $gris
-        font-size: 2rem
         ul
             font-family: $main-text
             text-transform: uppercase
@@ -374,14 +380,18 @@ footer
             li
                 padding: 2rem
                 text-decoration: underline
-                font-size: clamp(2.5rem, 3vw, 3.15rem)
+                font-size: clamp(3rem, 4vw, 3.5rem)
                 font-weight: 300
-                color: $gris
+                a
+                    color: $gris
+                    &:hover
+                        color: $rosa
+
     .input-group
         height: 50px
         width: 25%
         @media (max-width: 768px) 
-            width: 100%
+            width: $seccion-width
         input[type="email"]
             font-size: 1.75rem
             font-family: $main-text
@@ -390,15 +400,17 @@ footer
             color: $blanco
             border: none
             padding: 1rem
+            &::placeholder
+                color: $gris !important
         button
             width: 45px
             border: none
             .bi-send-check
-                font-size: 2rem
+                font-size: 2.2rem
 
 // ESTILOS DE LAS PAGINAS INTERNAS
 #acerca
-    width: 100%
+    width: $seccion-width
     //background-color: $negro
     height: calc( 800px - 10vh )
     text-transform: uppercase
@@ -441,7 +453,7 @@ footer
             font-family: $main-text
 
 #trabajos
-    width: 100%
+    width: $seccion-width
     padding-block: 3rem
     background-color: $negro
     color: $blanco
@@ -515,7 +527,7 @@ footer
         justify-content: center
         align-items: center
         position: absolute
-        width: 100%
+        width: $seccion-width
         height: 100%
         top: 50%
         left: 50%
@@ -562,6 +574,7 @@ figcaption
     .bi 
         color: $blanco
         padding: 0px
+        font-size: clamp(2rem, 2vw, 3rem)
         &:hover
             color: #0df053
     &:hover
@@ -573,7 +586,7 @@ figcaption
     bottom: 20px
     left: 50%
     transform: translateX(-50%)
-    font-size: 2rem
+    font-size: 3rem
     font-family: $main-text
     .bi
         color: $blanco
