@@ -27,16 +27,16 @@ $(document).scroll(function() {
   }
 });
 
-$(document).scroll(function() {
-  var y = $(this).scrollTop();
-  var windowHeight = $(window).height(); // Get window height
+// $(window).scroll(function() {
+//   var y = $(this).scrollTop();
+//   var windowHeight = $(window).height(); // Obtener la altura de la ventana
 
-  if (y > windowHeight / 20) {
-    $(".whatsapp").show();
-  } else {
-    $(".whatsapp").hide();
-  }
-});
+//   if (y > windowHeight / 50) {
+//     $(".whatsapp").show();
+//   } else {
+//     $(".whatsapp").hide();
+//   }
+// });
 
 $(document).scroll(function(){
   var y = $(this).scrollTop();

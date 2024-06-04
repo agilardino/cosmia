@@ -189,9 +189,11 @@ video
     width: $seccion-width
     display: grid
     grid-template-rows: repeat(3, 1fr)
+    div:nth-child(2)
+        border: none        
     .cosmia-estudio, .cosmia-salon, .cosmia-school        
         padding-block: 2rem
-        padding-inline: 5rem
+        padding-inline: clamp(5rem, calc(10vw + 1rem), 20rem)
         border-block: 1px solid $rosa
         cursor: pointer
         transition: .5s ease-in-out
@@ -412,16 +414,17 @@ footer
 #acerca
     width: $seccion-width
     //background-color: $negro
-    height: calc( 800px - 10vh )
+    height: calc( 800px - 5vh )
     text-transform: uppercase
     display: flex
     color: $blanco
+    background: url(../img/cosmia-img-about-page.png) no-repeat center
+    background-size: cover
     @media ( max-width: 991 )
-        height: 100dvh
-        
-    video
-        filter: grayscale(95%)
-        object-fit: cover
+        height: 100dvh        
+    // video
+    //     filter: grayscale(95%)
+    //     object-fit: cover
     .__acerca-contenido
         display: flex
         flex-direction: column
@@ -462,7 +465,7 @@ footer
         font-size: 1.83rem
         line-height: 1.85
         font-weight: 400
-        width: 40ch
+        padding-right: 8rem
         p
             &:nth-child(1)
                 padding-top: 2.5rem
@@ -478,9 +481,19 @@ footer
         line-height: 2
     .agendador
         h2
-            color: $gris
+            color: $rosa
             text-transform: uppercase
-            font-size: 4rem
+            font-size: 10rem
+            font-weight: 400
+            line-height: 0.9
+            span
+                font-weight: 100
+        p
+            text-transform: uppercase
+            font-size: 3.33rem
+            margin-top: -2.8rem
+            color: $negro
+            font-weight: 400
     .cambio-rojo    
         height: 120px
         filter: invert(14%) sepia(51%) saturate(7428%) hue-rotate(358deg) brightness(82%) contrast(118%)
@@ -564,17 +577,19 @@ figcaption
 .whatsapp
     z-index: 999
     position: fixed
+    width: 60px
+    height: 60px
     bottom: 30px
     right: 30px
-    padding: 10px 15px 
-    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.25)
-    transition:  all .5s
+    padding: 10px 5px
+    text-align: center 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25)
     border-radius: 100%
     background: #0df053
     .bi 
         color: $blanco
-        padding: 0px
-        font-size: clamp(2rem, 2vw, 3rem)
+        font-size: clamp(2.5rem, 2vw, 3.3rem)
+        padding: 10px
         &:hover
             color: #0df053
     &:hover
@@ -591,10 +606,11 @@ figcaption
     .bi
         color: $blanco
         font-size: 4rem
-
+.pulse
+    animation: pulse-animation 2s infinite
 #contacto
-    margin-top: 2rem
     background-color: $negro
+    padding-block: 5rem
     .redes-sociales
         padding-block: 5rem
         @media  ( max-width: 768px )
@@ -627,3 +643,6 @@ figcaption
             color: $blanco
             text-transform: uppercase
             font-weight: 300
+#bio
+    margin-top: 6rem
+    margin-bottom: 6rem

@@ -78,7 +78,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1200;
-  max-width: 1440px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 
@@ -195,6 +195,14 @@ header {
   }
   100% {
     transform: translateY(0);
+  }
+}
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(37, 211, 102, 0.3019607843) rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
   }
 }
 #home {
@@ -358,9 +366,12 @@ header {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
 }
+.cosmia-contacto div:nth-child(2) {
+  border: none;
+}
 .cosmia-contacto .cosmia-estudio, .cosmia-contacto .cosmia-salon, .cosmia-contacto .cosmia-school {
   padding-block: 2rem;
-  padding-inline: 5rem;
+  padding-inline: clamp(5rem, 10vw + 1rem, 20rem);
   border-block: 1px solid #d60029;
   cursor: pointer;
   transition: 0.5s ease-in-out;
@@ -650,20 +661,17 @@ footer .input-group button .bi-send-check {
 
 #acerca {
   width: 100%;
-  height: calc(800px - 10vh);
+  height: calc(800px - 5vh);
   text-transform: uppercase;
   display: flex;
   color: #fff;
+  background: url(../img/cosmia-img-about-page.png) no-repeat center;
+  background-size: cover;
 }
 @media (max-width: 991) {
   #acerca {
     height: 100dvh;
   }
-}
-#acerca video {
-  filter: grayscale(95%);
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 #acerca .__acerca-contenido {
   display: flex;
@@ -707,7 +715,7 @@ footer .input-group button .bi-send-check {
   font-size: 1.83rem;
   line-height: 1.85;
   font-weight: 400;
-  width: 40ch;
+  padding-right: 8rem;
 }
 #trabajos .descripcion p:nth-child(1) {
   padding-top: 2.5rem;
@@ -725,9 +733,21 @@ footer .input-group button .bi-send-check {
   line-height: 2;
 }
 #__contenido-secundario .agendador h2 {
-  color: #606060;
+  color: #d60029;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 10rem;
+  font-weight: 400;
+  line-height: 0.9;
+}
+#__contenido-secundario .agendador h2 span {
+  font-weight: 100;
+}
+#__contenido-secundario .agendador p {
+  text-transform: uppercase;
+  font-size: 3.33rem;
+  margin-top: -2.8rem;
+  color: #000;
+  font-weight: 400;
 }
 #__contenido-secundario .cambio-rojo {
   height: 120px;
@@ -832,18 +852,20 @@ figcaption img {
 .whatsapp {
   z-index: 999;
   position: fixed;
+  width: 60px;
+  height: 60px;
   bottom: 30px;
   right: 30px;
-  padding: 10px 15px;
-  box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.25);
-  transition: all 0.5s;
+  padding: 10px 5px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
   border-radius: 100%;
   background: #0df053;
 }
 .whatsapp .bi {
   color: #fff;
-  padding: 0px;
-  font-size: clamp(2rem, 2vw, 3rem);
+  font-size: clamp(2.5rem, 2vw, 3.3rem);
+  padding: 10px;
 }
 .whatsapp .bi:hover {
   color: #0df053;
@@ -867,9 +889,13 @@ figcaption img {
   font-size: 4rem;
 }
 
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
 #contacto {
-  margin-top: 2rem;
   background-color: #000;
+  padding-block: 5rem;
 }
 #contacto .redes-sociales {
   padding-block: 5rem;
@@ -913,4 +939,9 @@ figcaption img {
   color: #fff;
   text-transform: uppercase;
   font-weight: 300;
+}
+
+#bio {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }/*# sourceMappingURL=styles.css.map */
