@@ -89,7 +89,7 @@ video
         text-transform: uppercase
         height: 13.75dvh
         width: $seccion-width
-        border-block: 0.10rem solid $blanco
+        border-block: 1px solid $blanco
         display: flex
         justify-content: center
         align-items: center
@@ -187,28 +187,37 @@ video
 .cosmia-contacto
     background-color: $negro
     width: $seccion-width
-    display: grid
-    grid-template-rows: repeat(3, 1fr)
+    text-decoration: none
+    a
+        text-decoration: none
+    .container-fluid
+        border-block: 1px solid $rosa
+        cursor: pointer
+        transition: .5s ease-in-out        
+        a
+            text-decoration: none
+            color: $blanco                
+        &:hover
+            background-color: $rosa
+            .bi
+                color: $blanco
     div:nth-child(2)
         border: none        
     .cosmia-estudio, .cosmia-salon, .cosmia-school        
         padding-block: 2rem
-        padding-inline: clamp(5rem, calc(10vw + 1rem), 20rem)
-        border-block: 1px solid $rosa
         cursor: pointer
         transition: .5s ease-in-out
         h3
             font-size: clamp(2.15rem, 5vw, 5rem) 
             text-transform: uppercase
             font-weight: 200 
+            color: $blanco
+            text-decoration: none
         .bi
             color: $rosa
             margin-inline: 1rem
-        &:hover
-            background-color: $rosa
-            .bi
-                color: $blanco
         
+
 #agendar
     height: 100dvh
     width: $seccion-width
@@ -252,7 +261,7 @@ video
             font-kerning: 2rem
 #video-section
     background: url(../img/bg-video.png) no-repeat center center
-    height: 800px
+    height: 600px
     background-size: cover
     display: flex
     width: $seccion-width
@@ -364,52 +373,6 @@ video
             width: 100%
             object-fit: cover
     
-footer
-    width: $seccion-width
-    padding-block: 5rem
-    background: $blanco
-    img
-        width: 500px
-    .iconos-rrss
-        color: $gris
-        ul
-            font-family: $main-text
-            text-transform: uppercase
-            list-style: none
-            display: flex
-            justify-content: center
-            gap: 2rem
-            li
-                padding: 2rem
-                text-decoration: underline
-                font-size: clamp(3rem, 4vw, 3.5rem)
-                font-weight: 300
-                a
-                    color: $gris
-                    &:hover
-                        color: $rosa
-
-    .input-group
-        height: 50px
-        width: 25%
-        @media (max-width: 768px) 
-            width: $seccion-width
-        input[type="email"]
-            font-size: 1.75rem
-            font-family: $main-text
-            font-weight: 400
-            background-color: $negro
-            color: $blanco
-            border: none
-            padding: 1rem
-            &::placeholder
-                color: $gris !important
-        button
-            width: 45px
-            border: none
-            .bi-send-check
-                font-size: 2.2rem
-
 // ESTILOS DE LAS PAGINAS INTERNAS
 #acerca
     width: $seccion-width
@@ -474,6 +437,10 @@ footer
                 text-wrap: pretty
         @media ( max-width: 768px )
             padding-right: 0
+figure 
+    margin: 0 0 1rem
+    padding-bottom: 5rem
+
 #__contenido-secundario
     padding-block: 5rem
     p
@@ -506,24 +473,35 @@ footer
         background-color: $rojo
         p
             color: $blanco
-            padding: 1.5rem
+            padding: 6rem
             &:nth-child(1)
                 font-size: 1.83rem
+                line-height: 1.5
+                padding: 6rem 8rem 0 
+                @media ( max-width: 991px )
+                    padding: 1rem                    
             &:nth-child(2)
-                font-size: 2.66rem
-                
+                font-size: 2.66rem                
+                line-height: 1.2
+                padding: 2rem 8rem
+                @media ( max-width: 991px )
+                    padding: 1rem                    
         @media ( max-width: 991px )
             position: relative
             z-index: auto 
             top: auto     
             margin-bottom: 1rem
             p
-                padding: 1.5rem
-                font-size: 1.5rem
-    .blockquote-footer
-        font-size: 2rem
-        color: $blanco
-        padding-left: 2rem 
+                padding: 0
+                font-size: 1.5rem 
+    figcaption
+        padding-inline: 8rem
+        h5
+            font-size: 2.667rem
+            font-weight: 400
+        @media ( max-width: 991px )
+            padding-inline: 1rem
+            
     .descripcion
         font-size: 1.83rem
         max-width: 85ch
@@ -647,3 +625,52 @@ figcaption
 #bio
     margin-top: 6rem
     margin-bottom: 6rem
+
+/*** FOOTER ESTILOS ***/
+footer
+    width: $seccion-width
+    padding-block: 5rem
+    background: $blanco
+    img
+        width: 500px
+    .iconos-rrss
+        color: $gris
+        ul
+            font-family: $main-text
+            text-transform: uppercase
+            list-style: none
+            display: flex
+            justify-content: center
+            gap: 2rem
+            li
+                padding: 2rem
+                text-decoration: underline
+                font-size: clamp(3rem, 4vw, 3.5rem)
+                font-weight: 300
+                a
+                    color: $gris
+                    &:hover
+                        color: $rosa
+
+    .input-group
+        height: 50px
+        width: max(25%)
+        @media (max-width: 991px)
+            width: calc( $seccion-width / 2 )
+        @media (max-width: 768px) 
+            width: $seccion-width
+        input[type="email"]
+            font-size: 1.75rem
+            font-family: $main-text
+            font-weight: 400
+            background-color: $negro
+            color: $blanco
+            border: none
+            padding: 1rem
+            &::placeholder
+                color: $gris !important
+        button
+            width: 45px
+            border: none
+            .bi-send-check
+                font-size: 2.2rem
