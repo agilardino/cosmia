@@ -73,3 +73,45 @@ header
                 text-transform: uppercase
                 &:hover
                     color: $rojo
+
+
+.offcanvas
+    background-color: #000
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: right
+.navbar-collapse .nav-link
+    font-size: 3.5em
+    letter-spacing: 2px
+.navbar-toggler
+  color: $rosa
+  font-size: 8rem
+  border: none
+  z-index: 2990
+.navbar-toggler:focus 
+  box-shadow: none
+
+.offcanvas.offcanvas-end
+    width: 50vw
+    @media screen and ( max-width: 768px )
+        width: 100%
+
+.navbar-nav
+    padding-top: 60px
+    .nav-item
+        font-size: 3rem
+        display: block
+        padding-block: .85rem
+        text-transform: uppercase
+        width: 20ch
+    .nav-link
+        color: $blanco
+        font-weight: 300
+        &:hover
+            color: $rosa
+            &::before
+                content: "+ "
+                color: $rosa
+                transition: .5s ease-in-out
