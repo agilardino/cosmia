@@ -3,7 +3,7 @@ $blanco: #fff
 $rosa: #d60029
 $rojo: #c40d31
 $gris: #606060
-$font-size: 1.6rem
+$font-size: 1rem
 $titulos: 5rem
 $main-text: "Work Sans", sans-serif
 $negro: #000
@@ -21,15 +21,11 @@ html
     overflow-x: hidden
 
 body
-    transform: scale(0.8) //* Escala el contenido al 80% */
-    transform-origin: 0 0 //* Establece el punto de origen de la escala en la esquina superior izquierda */
-    width: 125% //* Ajusta el ancho para evitar el desbordamiento horizontal */
     font-size: $font-size
     font-family: $main-text
     color: $blanco
     scroll-behavior: smooth
-    overflow-x: hidden
-    overflow-y: hidden
+    overflow: hidden
 
 h1, h2, h3, h4 
     text-wrap: balance
@@ -65,7 +61,7 @@ video
     @media ( max-width: 520px )
         rotate: 0deg
         max-width: 300px
-        
+
 @import _navegacion
 
 @import _animacion
@@ -380,14 +376,14 @@ video
 #acerca
     width: $seccion-width
     //background-color: $negro
-    height: calc( 800px - 5vh )
+    height: calc( 650px - 5dvh )
     text-transform: uppercase
     display: flex
     color: $blanco
     background: url(../img/cosmia-img-about-page.png) no-repeat center
     background-size: cover
-    @media ( max-width: 991 )
-        height: 100dvh        
+    @media ( max-width: 768px )
+        height: 88dvh        
     // video
     //     filter: grayscale(95%)
     //     object-fit: cover
