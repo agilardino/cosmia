@@ -7,7 +7,8 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+  overflow: auto;
+  min-height: 100%;
 }
 
 body {
@@ -16,6 +17,24 @@ body {
   color: #fff;
   scroll-behavior: smooth;
   overflow: hidden;
+  transform: scale(0.8);
+  transform-origin: 0 0;
+  width: 125%;
+}
+@media (max-width: 1200px) {
+  body {
+    transform: scale(0.75);
+  }
+}
+@media (max-width: 800px) {
+  body {
+    transform: scale(0.7);
+  }
+}
+@media (max-width: 600px) {
+  body {
+    transform: scale(0.65);
+  }
 }
 
 h1, h2, h3, h4 {
@@ -485,7 +504,7 @@ header {
 }
 
 #agendar {
-  height: 100dvh;
+  height: 125dvh;
   width: 100%;
   background-image: url(../img/bg_3_luciana_cita.png);
   background-size: cover;
@@ -501,14 +520,14 @@ header {
   text-align: left;
 }
 #agendar .citas h1 {
-  font-size: clamp(5rem, 7vw, 10rem);
+  font-size: clamp(3rem, 6vw, 8rem);
   font-family: "Work Sans", sans-serif;
   font-weight: 100;
   text-transform: uppercase;
   padding-left: 1rem;
 }
 #agendar .citas .bi-plus-lg {
-  font-size: clamp(8rem, 10vw, 10rem);
+  font-size: clamp(6rem, 8vw, 8rem);
   color: #c40d31;
   text-align: left;
 }
