@@ -20,7 +20,7 @@ $(document).scroll(function() {
   var y = $(this).scrollTop();
   var windowHeight = $(window).height(); // Get window height
 
-  if (y > windowHeight / 10) {
+  if (y > windowHeight / 15) {
     $(".chevron").hide();
   } else {
     $(".chevron").show();

@@ -280,11 +280,11 @@ header {
   }
 }
 .container-lg {
-  max-width: 1440px;
+  max-width: 1200px;
 }
 
 .container-md {
-  max-width: 1200px;
+  max-width: 960px;
 }
 
 #home {
