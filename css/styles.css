@@ -306,7 +306,7 @@ header {
   }
 }
 #home .main-hero {
-  height: calc(66dvh - 1rem);
+  height: calc(68.5dvh - 1rem);
 }
 @media (max-width: 1366px) {
   #home .main-hero {
@@ -329,7 +329,7 @@ header {
 }
 #home .main-text {
   text-transform: uppercase;
-  height: 13.75dvh;
+  height: 12dvh;
   width: 100%;
   border-block: 1px solid #fff;
   display: flex;
@@ -386,7 +386,7 @@ header {
   color: #fff;
   text-decoration: none;
   display: block;
-  height: 108px;
+  height: 100px;
   padding-block: 1.85rem;
 }
 #home .makeup-block div a:hover {
