@@ -308,6 +308,11 @@ header {
 #home .main-hero {
   height: calc(66dvh - 1rem);
 }
+@media (max-width: 1366px) {
+  #home .main-hero {
+    height: calc(73dvh - 1rem);
+  }
+}
 @media (max-width: 991px) {
   #home .main-hero {
     height: 82dvh;
