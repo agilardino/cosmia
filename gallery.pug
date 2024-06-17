@@ -1,0 +1,76 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css")
+        link(rel="stylesheet", href="css/bootstrap.min.css")
+        link(rel="stylesheet", href="css/styles.css")
+        title Cosmia Gallery
+    body(style="background: #000")
+        div.whatsapp.pulse
+            a(href="index.html")
+                i.bi.bi-whatsapp 
+        div.chevron.text-center
+            span()
+                i.bi.bi-chevron-down
+
+        header.position-fixed 
+            img.logo.invisible(src="img/cosmia-blanco-90.svg")
+            button#abrir.abrir-menu
+                i.bi.bi-x
+            nav.nav#nav 
+                button.cerrar-menu#cerrar 
+                    i.bi.bi-x
+                ul.nav-list
+                    li
+                        img(src="img/logo-cosmia-white.svg", alt="", width="250px")
+                    li
+                        a(href="index.html") Cosmia Salón
+                    li
+                        a(href="#") Cosmia School 
+                    li
+                        a(href="#") Cosmia Studio
+                    li
+                        a(href="#") Contacto
+                    li
+                        a(href="")
+                            i.bi.bi-facebook
+                    li
+                        a(href="") 
+                            i.bi.bi-instagram
+                    li
+                        a(href="")
+                            i.bi.bi-youtube
+        section#home 
+            .container-fluid
+                video(src="img/base-video.mp4", autoplay, loop) 
+                .row.align-items-center.main-hero 
+                    .col-12.col-md-4.offset-md-6.text-center
+                        img.logo_principal(src="img/logo-cosmia-white.svg", alt="logo Cosmia")
+                .row.align-items-center 
+                    .col-md-12.main-text 
+                        h2 en <b>Cosmia</b> mejoraremos la obra de arte que eres y siempre seras.
+                .row.makeup-block.text-center 
+                    .col-12 
+                        a(href="cosmiastudio.html")
+                            i.bi.bi-plus-lg 
+                            Agenda una cita
+
+                                            
+                    
+                            
+                            
+
+
+
+
+
+
+
+
+
+        script(src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous") 
+        script(src="js/app.js") 
